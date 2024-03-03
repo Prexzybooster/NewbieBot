@@ -107,20 +107,8 @@ cd NewbieBot
 npm i
 pm2 start index.js
 clear
-CHATID=$CHATID
-   KEY=$KEY
-  TIME="10"
-   URL="https://api.telegram.org/bot$KEY/sendMessage"
-  TEXT="<code>────────────────────</code>
-<b>⚡AUTOSCRIPT NEWBIE BOT⚡</b>
-<code>────────────────────</code>
-<code>ID     : </code><code>$ipsaya</code>
-<code>Date   : </code><code>$TIME</code>
-<code>Time   : </code><code>$TIMEZONE</code>
-<code>────────────────────</code>
-"
-
-curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+cd /root
+rm setup.sh
 clear
 echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e " \e[1;971m                      BOT BERHASIL DIPASANG                \e[0m"
