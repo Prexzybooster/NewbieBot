@@ -87,7 +87,9 @@ read -p "$( echo -e "Press ${GRAY}[ ${NC}${green}Enter${NC} ${GRAY}]${NC} For St
 echo ""
 clear
     ########
-    print_install "Menginstall Packet Yang Dibutuhkan"
+echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e " \e[1;971m                  MEMASANG FILE YANG DIBUTUHKAN                \e[0m"
+echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 apt install git
 apt install ffmpeg -y
 apt install imagemagick -y
@@ -97,7 +99,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 nvm install node # "node" is an alias for the latest version
 npm install pm2 -g
 clear
-    print_install "Menginstall NewbieBot WhatsApp"
+echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e " \e[1;971m                     MEMASANG NEWBIEBOT WHATSAPP               \e[0m"
+echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 git clone https://github.com/diah082/NewbieBot
 cd NewbieBot
 npm i
