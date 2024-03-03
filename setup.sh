@@ -51,9 +51,9 @@ clear
 # Valid Script
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 ipsaya=$(wget -qO- ipinfo.io/ip)
-data_ip="https://raw.githubusercontent.com/diah082/newbiebot/main/izin"
+data_ip="https://raw.githubusercontent.com/diah082/newbiebot/main/Izin"
 checking_sc() {
-  useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $1}')
+  useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $2}')
   if [[ $ipsaya = $useexp ]]; then
     echo -ne
   else
