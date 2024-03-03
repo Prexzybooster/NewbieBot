@@ -1,4 +1,4 @@
-process.on("uncaughtException", console.error);
+        process.on("uncaughtException", console.error);
 require("./config");
 
 const fs = require('fs');
@@ -15,9 +15,9 @@ const { addBalance } = require("./lib/limit.js");
 const { smsg, formatp, tanggal, GIFBufferToVideoBuffer, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom, fetchBuffer } = require('./lib/myfunc')
 const _ = require("lodash");
 const yargs = require("yargs/yargs");
-const kaitime = moment.tz('Asia/Kolkata').format('HH:mm:ss');
-const kaidate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY');
-const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss');
+const kaitime = moment.tz('Asia/Jakarta').format('HH:mm:ss');
+const kaidate = moment.tz('Asia/Jakarta').format('DD/MM/YYYY');
+const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss');
 const currentDate = new Date();
 const options = { weekday: 'long' }; // Specify 'long' to get the full day name
 const currentDay = new Intl.DateTimeFormat('en-US', options).format(currentDate);
@@ -221,7 +221,7 @@ global.db = JSON.parse(fs.readFileSync('./src/database.json'))
 let _sewa = require("./lib/sewa");
 const sewa = JSON.parse(fs.readFileSync('./database/sewa.json'))
 const time = moment.tz('Asia/Kolkata').format('DD/MM HH:mm:ss')
-const ucap = moment(Date.now()).tz('Asia/Kolkata').locale('id').format('a')
+const ucap = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
 var buln = ['/01/', '/02/', '/03/', '/04/', '/05/', '/06/', '/07/', '/08/', '/09/', '/10/', '/11/', '/12/'];
 var myHari = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var tgel = new Date();
@@ -514,7 +514,7 @@ module.exports = A17 = async (A17, m, chatUpdate, store) => {
     //   var rondonxk = '[-a-zA-Z0-9@:%._+~#=].[-a-zA-Z0-9@:%._+~#=].[-a-zA-Z0-9()@:%_+.~#?&/=]'
     //   if (budy.includes("https://")) {
     //     if (!isBotAdmins) return
-    //     bvl = `\`\`\`「  Antilink System  」\`\`\`\n\nLink sent by Admin so no action will be taken!`
+    //     bvl = `\`\`\`「  Antilink System  」\`\`\`\n\nLink sent by Admin so no action will be taken${prefix}!`
     //     if (isAdmins) return reply(bvl)
     //     if (m.key.fromMe) return reply(bvl)
     //     if (isCreator) return reply(bvl)
@@ -540,7 +540,7 @@ module.exports = A17 = async (A17, m, chatUpdate, store) => {
 
     // if (budy.includes("http://")) {
     //     if (!isBotAdmins) return
-    //     bvl = `\`\`\`「  Antilink System  」\`\`\`\n\nLink sent by Admin so no action will be taken!`
+    //     bvl = `\`\`\`「  Antilink System  」\`\`\`\n\nLink sent by Admin so no action will be taken${prefix}!`
     //     if (isAdmins) return reply(bvl)
     //     if (m.key.fromMe) return reply(bvl)
     //     if (isCreator) return reply(bvl)
@@ -660,7 +660,7 @@ module.exports = A17 = async (A17, m, chatUpdate, store) => {
 ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
-${isWin ? `@${winner.split('@')[0]} Won!` : isTie ? `Game Over` : `Turn ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
+${isWin ? `@${winner.split('@')[0]} Won${prefix}!` : isTie ? `Game Over` : `Turn ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
 ❌: @${room.game.playerX.split('@')[0]}
 ⭕: @${room.game.playerO.split('@')[0]}
 Typed *surrender* to surrender and admited defeat`
@@ -752,8 +752,10 @@ Typed *surrender* to surrender and admited defeat`
     const responses = {
 
 
-      hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
-      kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
+      gcvip: `https://chat.whatsapp.com/FvCqYRo6tho8j5R8ib0R7f\n\nSilahkan Join Grup Member Vip Kak`,
+      playloaden: `GET / HTTP/1.1[crlf]Host: [host][crlf]PATCH / HTTP/1.1[crlf]Host: Bug.com[crlf]Upgrade: websocket [crlf] User-Agent: [ua][crlf][crlf]Content-Length: CONFIG BY. NEWBIE[crlf][crlf][split]200 OK [crlf]`,
+      playloadws: `GET / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf]User-Agent: [ua][crlf][crlf][split]CONFIG BY. NEWBIE[crlf][crlf]`,
+      config: `Link Config Newbie : https://sfile.mobi/user.php?files&user=681091\n\nLink *ALL CONFIG VIP NEWBIE*, ${kaidate} : https://sfile.mobi/7309A1NFeM8\n\nLink Grup NEWBIE : https://chat.whatsapp.com/Dg92Vc51FhlDE8nVfkLZJB\n\nhttps://chat.whatsapp.com/Cf46CisYPMF45EJQodH5Ur`,
       runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
       konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
       sasha: 'Only you...🫶🏻',
@@ -772,8 +774,399 @@ Typed *surrender* to surrender and admited defeat`
       reply(responses[smallinput]);
     }
 
+    const respon = {
+      harga: `Hay *${pushname}*, Aku *${BotName}*. Ini List Harga Newbie!
 
+*NEWBIE STORE VPN PREMIUM*
+Protocol:
+*_✅ SSH ✅ VMESS_*
+*_✅ VLESS ✅ TROJAN_*
+*___________________*
+*List Harga*
+*___________________*
+*_SERVER SGDO_* 🇸🇬
+*___________________*
+😀 *_5K | 15 Hari | 1HP |_*
+*_BERGARANSI_*
+😋  *_8K | 30 Hari | 1HP |_*
+*_BERGARANSI_*
+🤩 *_10K | 30 Hari | 2HP |_*
+*_BERGARANSI_*
+🔥 *_15K | 30 Hari | 4HP |_*
+*_BERGARANSI_*
+*___________________*
+*_SERVER INDO_* 🇲🇨
+*___________________*
+😀 *_8K | 15 Hari | 1HP |_*
+*_BERGARANSI_*
+😋  *_12K | 30 Hari | 1HP |_*
+*_BERGARANSI_*
+🤩 *_15K | 30 Hari | 2HP |_*
+*_BERGARANSI_*
+🔥 *_20K | 30 Hari | 4HP |_*
+*_BERGARANSI_*
+*___________________*
+*Membeli artinya Setuju 👍 Jadilah Pembeli Yang Bijak* 🙂
+*Ready App lain*
+*___________________*
+*Pembayaran*
+DANA
+QRIS ALLPAYMENT
+*___________________*
+Ketik :
+*pay* untuk infomasi Pembayaran
+*___________________*`,
+    p: `*NEWBIE STORE VPN PREMIUM*
+Protocol:
+*_✅ SSH ✅ VMESS_*
+*_✅ VLESS ✅ TROJAN_*
+*___________________*
+*List Harga*
+*___________________*
+*_SERVER SGDO_* 🇸🇬
+*___________________*
+😀 *_5K | 15 Hari | 1HP |_*
+*_BERGARANSI_*
+😋  *_8K | 30 Hari | 1HP |_*
+*_BERGARANSI_*
+🤩 *_10K | 30 Hari | 2HP |_*
+*_BERGARANSI_*
+🔥 *_15K | 30 Hari | 4HP |_*
+*_BERGARANSI_*
+*___________________*
+*_SERVER INDO_* 🇲🇨
+*___________________*
+😀 *_8K | 15 Hari | 1HP |_*
+*_BERGARANSI_*
+😋  *_12K | 30 Hari | 1HP |_*
+*_BERGARANSI_*
+🤩 *_15K | 30 Hari | 2HP |_*
+*_BERGARANSI_*
+🔥 *_20K | 30 Hari | 4HP |_*
+*_BERGARANSI_*
+*___________________*
+*Membeli artinya Setuju 👍 Jadilah Pembeli Yang Bijak* 🙂
+*Ready App lain*
+*___________________*
+*Pembayaran*
+DANA
+QRIS ALLPAYMENT
+*___________________*
+BENEFIT:
+💎 KUALITAS TERJAMIN
+💎 FREE CONFIG
+💎 BEBAS GONTA GANTI CONFIG REQUEST KE ADMIN 
+💎 WAJIB TRIAL 
+💎 GARANSI 
+💎 SUDAH BAYAR TDK PUAS BISA REFUNDS
+💎 SUPPORT VC, CALL
+💎 GAME (SILAHKAN DICOBA LANGSUNG)
+💎 DIJAMIN AMANAH
+*___________________*
+*RULES*
+⛔ No Judi Online
+⛔ No Trade
+⛔ No Torrent 
+⛔ No Hacking
+⛔ No DDOS
+⛔ Multi Login Sesuai Akun!!
 
+*_Melanggar = Baned_*
+*__________________*
+🛒 Katalog : https://wa.me/c/6287715912587
+📱 Saluran : https://whatsapp.com/channel/0029VaOo8hjE50UmSF1kp31W
+📚Grup Newbie : 
+https://chat.whatsapp.com/Dg92Vc51FhlDE8nVfkLZJB
+📚Grup Newbie2 :
+https://chat.whatsapp.com/Cf46CisYPMF45EJQodH5Ur
+📂Testi : https://t.me/TESTI_NEWBIE
+🔖Grup Tele : https://t.me/newbielearning
+Minat Hub :
+➠ ADMIN 1
+Https://wa.me/6287715912587
+*___________________*`,
+      promosi: `*NEWBIE STORE VPN PREMIUM*
+Protocol:
+*_✅ SSH ✅ VMESS_*
+*_✅ VLESS ✅ TROJAN_*
+*___________________*
+*List Harga*
+*___________________*
+*_SERVER SGDO_* 🇸🇬
+*___________________*
+😀 *_5K | 15 Hari | 1HP |_*
+*_BERGARANSI_*
+😋  *_8K | 30 Hari | 1HP |_*
+*_BERGARANSI_*
+🤩 *_10K | 30 Hari | 2HP |_*
+*_BERGARANSI_*
+🔥 *_15K | 30 Hari | 4HP |_*
+*_BERGARANSI_*
+*___________________*
+*_SERVER INDO_* 🇲🇨
+*___________________*
+😀 *_8K | 15 Hari | 1HP |_*
+*_BERGARANSI_*
+😋  *_12K | 30 Hari | 1HP |_*
+*_BERGARANSI_*
+🤩 *_15K | 30 Hari | 2HP |_*
+*_BERGARANSI_*
+🔥 *_20K | 30 Hari | 4HP |_*
+*_BERGARANSI_*
+*___________________*
+*Membeli artinya Setuju 👍 Jadilah Pembeli Yang Bijak* 🙂
+*Ready App lain*
+*___________________*
+*Pembayaran*
+DANA
+QRIS ALLPAYMENT
+*___________________*
+BENEFIT:
+💎 KUALITAS TERJAMIN
+💎 FREE CONFIG
+💎 BEBAS GONTA GANTI CONFIG REQUEST KE ADMIN 
+💎 WAJIB TRIAL 
+💎 GARANSI 
+💎 SUDAH BAYAR TDK PUAS BISA REFUNDS
+💎 SUPPORT VC, CALL
+💎 GAME (SILAHKAN DICOBA LANGSUNG)
+💎 DIJAMIN AMANAH
+*___________________*
+*RULES*
+⛔ No Judi Online
+⛔ No Trade
+⛔ No Torrent 
+⛔ No Hacking
+⛔ No DDOS
+⛔ Multi Login Sesuai Akun!!
+
+*_Melanggar = Baned_*
+*__________________*
+🛒 Katalog : https://wa.me/c/6287715912587
+📱 Saluran : https://whatsapp.com/channel/0029VaOo8hjE50UmSF1kp31W
+📚Grup Newbie : 
+https://chat.whatsapp.com/Dg92Vc51FhlDE8nVfkLZJB
+📚Grup Newbie2 :
+https://chat.whatsapp.com/Cf46CisYPMF45EJQodH5Ur
+📂Testi : https://t.me/TESTI_NEWBIE
+🔖Grup Tele : https://t.me/newbielearning
+Minat Hub :
+➠ ADMIN 1
+Https://wa.me/6287715912587
+*___________________*`,
+    '.izinpromosimin': `*NEWBIE STORE VPN PREMIUM*
+Protocol:
+*_✅ SSH ✅ VMESS_*
+*_✅ VLESS ✅ TROJAN_*
+*___________________*
+*List Harga*
+*___________________*
+*_SERVER SGDO_* 🇸🇬
+*___________________*
+😀 *_5K | 15 Hari | 1HP |_*
+*_BERGARANSI_*
+😋  *_8K | 30 Hari | 1HP |_*
+*_BERGARANSI_*
+🤩 *_10K | 30 Hari | 2HP |_*
+*_BERGARANSI_*
+🔥 *_15K | 30 Hari | 4HP |_*
+*_BERGARANSI_*
+*___________________*
+*_SERVER INDO_* 🇲🇨
+*___________________*
+😀 *_8K | 15 Hari | 1HP |_*
+*_BERGARANSI_*
+😋  *_12K | 30 Hari | 1HP |_*
+*_BERGARANSI_*
+🤩 *_15K | 30 Hari | 2HP |_*
+*_BERGARANSI_*
+🔥 *_20K | 30 Hari | 4HP |_*
+*_BERGARANSI_*
+*___________________*
+*Membeli artinya Setuju 👍 Jadilah Pembeli Yang Bijak* 🙂
+*Ready App lain*
+*___________________*
+*Pembayaran*
+DANA
+QRIS ALLPAYMENT
+*___________________*
+BENEFIT:
+💎 KUALITAS TERJAMIN
+💎 FREE CONFIG
+💎 BEBAS GONTA GANTI CONFIG REQUEST KE ADMIN 
+💎 WAJIB TRIAL 
+💎 GARANSI 
+💎 SUDAH BAYAR TDK PUAS BISA REFUNDS
+💎 SUPPORT VC, CALL
+💎 GAME (SILAHKAN DICOBA LANGSUNG)
+💎 DIJAMIN AMANAH
+*___________________*
+*RULES*
+⛔ No Judi Online
+⛔ No Trade
+⛔ No Torrent 
+⛔ No Hacking
+⛔ No DDOS
+⛔ Multi Login Sesuai Akun!!
+
+*_Melanggar = Baned_*
+*__________________*
+🛒 Katalog : https://wa.me/c/6287715912587
+📱 Saluran : https://whatsapp.com/channel/0029VaOo8hjE50UmSF1kp31W
+📚Grup Newbie : 
+https://chat.whatsapp.com/Dg92Vc51FhlDE8nVfkLZJB
+📚Grup Newbie2 :
+https://chat.whatsapp.com/Cf46CisYPMF45EJQodH5Ur
+📂Testi : https://t.me/TESTI_NEWBIE
+🔖Grup Tele : https://t.me/newbielearning
+Minat Hub :
+➠ ADMIN 1
+Https://wa.me/6287715912587
+*___________________*`,
+    };
+
+    const iinnput = budy.toLowerCase();
+    
+    if (respon.hasOwnProperty(iinnput)) {
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/Promo.jpg'), gifPlayback: false,
+          caption: (respon[iinnput]),
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m });
+      }
+
+    const respons = {
+      vps: `━━━━━━━━━━━━━━━━
+       🌐 *_VPS BY_* 🌐
+🌐 *_NEWBIE STORE_* 🌐
+━━━━━━━━━━━━━━━━
+✓ ISP DigitalOcean 🚀
+✓ Install script by NEWBIE STORE
+✓ Garansi Selama Masa Aktif❗❗❗
+━━━━━━━━━━━━━━━
+*_Operating System_*
+• Ubuntu
+• Debian
+━━━━━━━━━━━━━━━━
+- Spek dan Harga :
+✓ 1GB RAM, 25GB SSD : 35 IDR
+✓ 2GB RAM, 50GB SSD : 45 IDR
+✓ 4GB RAM, 80GB SSD : 75 IDR
+✓ 8GB RAM, 160GB SSD : 105 IDR
+━━━━━━━━━━━━━━━
+ORDER ? :
+WHATSAPP : https://wa.me/6287715912587`,
+    };
+
+    const input = budy.toLowerCase();
+    
+    if (respons.hasOwnProperty(input)) {
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/Sc.jpg'), gifPlayback: false,
+          caption: (respons[input]),
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m });
+      }
+
+    const responee = {
+      sshoce: `id2.wscom.pro:80@sshocean-newbie:store`,
+      sshoce1: `id3.wscom.pro:80@sshocean-newbie:store`,
+      sshoce2: `id4.wscom.pro:80@sshocean-newbie:store`,
+      sshoce3: `sg1.wscom.pro:80@sshocean-newbie:store`,
+      sshoce4: `sg2.wscom.pro:80@sshocean-newbie:store`,
+      sshoce5: `sg3.wscom.pro:80@sshocean-newbie:store`,
+      sshoce6: `sg4.wscom.pro:80@sshocean-newbie:store`,
+      sshoce7: `sg6.wscom.pro:80@sshocean-newbie:store`,
+      sshws2: `ssh-sg3-ws.sshws.net:80@fastssh.com-newbie:store`,
+      sshws3: `ssh-sg4-ws.sshws.net:80@fastssh.com-newbie:store`,
+      sshws1: `sg-public1.sshws.net:80@fastssh.com-newbie:store`,
+      sshws: `ssh-sg-ws.sshws.net:80@fastssh.com-newbie:store`,
+      sshws4: `us1.sshws.net:80@fastssh.com-newbie:store`,
+
+    };
+
+    const inputeee = budy.toLowerCase();
+    
+    if (responee.hasOwnProperty(inputeee)) {
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/ssh.mp4'), gifPlayback: false,
+          caption: (responee[inputeee]),
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m });
+      }
+
+    const respone = {
+      promo: `━━━━━━━━━━━━━━━━
+       🌐 *_PROMO NEWBIE_* 🌐
+🌐 *_SERVER INDO 10K_* 🌐
+━━━━━━━━━━━━━━━━
+✓ ISP LINODE AKAMI 🚀
+✓ Bergaransi Dan Terpercaya NEWBIE STORE
+✓ Masa Aktif 2 Bulan❗❗❗
+*_✓ PROMO UNTUK 3 PEMBELI PERTAMA_* ❗❗❗
+━━━━━━━━━━━━━━━
+*_Rules_*
+• Tidak Multi Login
+━━━━━━━━━━━━━━━━
+*_KEUNTUNGAN_*
+✓ BERGARANSI SELAMA MASA AKTIF
+✓ BEBAS GANTI PAKET KUOTA / CONFIG
+✓ BISA BUKA ALL APP
+✓ KECEPATAN WUSS  🚀 🚀 🚀
+━━━━━━━━━━━━━━━
+ORDER ? :
+WHATSAPP : https://wa.me/6287715912587`,
+    };
+
+    const inpute = budy.toLowerCase();
+    
+    if (respone.hasOwnProperty(inpute)) {
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/Promo.jpg'), gifPlayback: false,
+          caption: (respone[inpute]),
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m });
+      }
+
+    const responi = { 
+    pay: `*Pembayaran Lewat Dana dan Qris*
+        
+Dana : 087863446310 An Diah Fitri Liani
+
+*Jangan Lupa Kirim Bukti TF Yah.*
+Terimakasih`,
+    'no dana': `*Pembayaran Lewat Dana dan Qris*
+        
+Dana : 087863446310 An Diah Fitri Liani
+
+*Jangan Lupa Kirim Bukti TF Yah.*
+Terimakasih`,
+    };
+
+    const inputee = budy.toLowerCase();
+    
+    if (responi.hasOwnProperty(inputee)) {
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/pic10.jpg'), gifPlayback: false,
+          caption: (responi[inputee]),
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m });
+      }
 
     //-----------------------------------------------------------------------------------------------------------------------------------//
 
@@ -804,7 +1197,7 @@ Typed *surrender* to surrender and admited defeat`
             externalAdreply: {
               title: "Powered by RLP27",
               body: " ",
-              thumbnail: fs.readFileSync("Assets/pic2.jpg"),
+              thumbnail: fs.readFileSync("As  sets/pic2.jpg"),
               mediaType: 1,
               //mediaUrl: 'https://wallpapercave.com/wp/wp10524580.jpg',
               //sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
@@ -1578,7 +1971,7 @@ Typed *surrender* to surrender and admited defeat`
               `Example:  ${prefix}gamble 100 direction(left,right,up,down)`
             );
           if (!value) return reply("*Please, specify the amount you are gambling with!");
-          if (!opp) return reply("Specify the direction you are betting on!");
+          if (!opp) return reply("Specify the direction you are betting on${prefix}!");
           if (!gg) return reply("Check your text please, You are using the command in a wrong way")
           if (m.quoted?.sender) m.mentionedJid.push(m.quoted.sender)
           if (g == false) return reply(`You don't have sufficient 💎 Diamond to gamble with`);
@@ -2070,28 +2463,6 @@ Typed *surrender* to surrender and admited defeat`
         }
       }
         break;
-
-
-      case 'dalle': case 'imgai': {
-        if (isBan) return reply(mess.banned);
-        if (isBanChat) return reply(mess.bangc);
-
-        const randomEmoji = manyemojis[Math.floor(Math.random() * manyemojis.length)];
-        A17.sendMessage(from, { react: { text: randomEmoji, key: m.key } });
-
-        if (!q) return reply(`Please provide a query to generate an image. Example: ${prefix + command} Beautiful landscape`);
-
-        const apiUrl = `https://gurugpt.cyclic.app/dalle?prompt=${encodeURIComponent(q)}`;
-
-        try {
-          await A17.sendMessage(m.chat, { image: { url: apiUrl } }, { quoted: m });
-        } catch (error) {
-          console.error(error);
-          reply("An error occurred while generating the image.");
-        }
-      }
-        break;
-
 
 
       case 'grupsetting':
@@ -3592,7 +3963,7 @@ Typed *surrender* to surrender and admited defeat`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
-        if (!isAdmins && !isCreator) return reply(mess.useradmin)
+        if (!isCreator) return reply(mess.botowner);
         A17.sendMessage(from, { react: { text: "✨", key: m.key } })
         A17.sendMessage(m.chat, { text: args.join(" ") ? args.join(" ") : '', mentions: participants.map(a => a.id) }, { quoted: m })
       }
@@ -4609,7 +4980,7 @@ Typed *surrender* to surrender and admited defeat`
         break;
 
 
-      case 'google': case 'search': {
+      case 'google': case 'search': case 'go': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "✨", key: m.key } })
@@ -4661,8 +5032,8 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { image: { url: res2[0].thumb }, caption: result2 })
         break;
 
-      case 'earthquake':
-        if (isBan) return reply(mess.banned);
+      case 'earthquake': case 'gempa': 
+          if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "⌛", key: m.key } })
 
@@ -4703,7 +5074,7 @@ Typed *surrender* to surrender and admited defeat`
       //       const resImage = await getBuffer(`https://api.popcat.xyz/screenshot?url=${lookupURL}`);
       //       await A17.sendMessage(m.from, { image: resImage, caption: `_Here's how this URL looks like:_\n${args[0]}\n` }, { quoted: m });
       //     } catch (error) {
-      //       m.reply(`An error occurred while processing your request!\n\nPlease recheck your link and try again!`);
+      //       m.reply(`An error occurred while processing your request!\n\nPlease recheck your link and try again${prefix}!`);
       //     }
       //   };
       //   break;
@@ -6882,15 +7253,13 @@ _Click the button below to download_`
         break;
 
 
-
-
       case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "✨", key: m.key } })
         const helpmenu = `Hemlo *${pushname}* Dear...!! ${nowtime} ,
   
-Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Gunakan dengan bijak yak ,jangan merintah yang aneh aneh oke:).
+Halo , Kenalin Saya *${global.BotName}* Saya Adalah Bot Whatsapp Yang dibuat oleh *${global.author}* Gunakan dengan bijak yak ,jangan merintah yang aneh aneh oke:).
 
 
 ┏ ┅ ━━〔〄 Bot Info 〄 〕━ ┅ ━
@@ -6945,21 +7314,36 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
 ┃
 ┃
 ┃ ⌯     ${prefix}add
-┃  ⌯     ${prefix}invite
-┃  ⌯     ${prefix}remove
-┃⌯     ${prefix}promote
+┃ ⌯     ${prefix}invite
+┃ ⌯     ${prefix}remove
+┃ ⌯     ${prefix}promote
 ┃ ⌯     ${prefix}demote
-┃  ⌯     ${prefix}grouplink
+┃ ⌯     ${prefix}grouplink
 ┃ ⌯     ${prefix}group-event
 ┃ ⌯     ${prefix}groupsetting
 ┃ ⌯     ${prefix}setname
 ┃ ⌯     ${prefix}setgcpp
 ┃ ⌯     ${prefix}setdesc
-┃  ⌯     ${prefix}revoke
-┃  ⌯     ${prefix}tagall
-┃  ⌯     ${prefix}hidetag
+┃ ⌯     ${prefix}revoke
+┃ ⌯     ${prefix}tagall
+┃ ⌯     ${prefix}hidetag
 ┃ ⌯     ${prefix}nsfw
-┃  ⌯     ${prefix}nsnfwmenu
+┃ ⌯     ${prefix}nsnfwmenu
+┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
+
+┏ ┅ ━━〔〄 MENU BUG〄 〕━ ┅ ━
+┃
+┃
+┃   ⌯     ${prefix}bugmenu
+┃   ⌯     ${prefix}!tselilped
+┃   ⌯     ${prefix}!xlfb
+┃   ⌯     ${prefix}!xledu
+┃   ⌯     ${prefix}!xlcon
+┃   ⌯     ${prefix}!xlvision
+┃   ⌯     ${prefix}!axiscon
+┃   ⌯     ${prefix}!axisedu
+┃   ⌯     ${prefix}!axisgame
+┃
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
 
   〢━━━❗ *Anti Link ❗* ━━━〢
@@ -7093,11 +7477,11 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
   ⌯     ${prefix}facebook
   ⌯     ${prefix}fbmp3
   ⌯     ${prefix}twitter
- ┃ ⌯     ${prefix}twittermp3
-┃  ⌯     ${prefix}tiktok
-┃  ⌯     ${prefix}tiktokaudio
+┃ ⌯     ${prefix}twittermp3
+┃ ⌯     ${prefix}tiktok
+┃ ⌯     ${prefix}tiktokaudio
 ┃ ⌯     ${prefix}happymod
-┃  ⌯     ${prefix}tiktoknowm
+┃ ⌯     ${prefix}tiktoknowm
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
  
 ┏ ┅ ━〔🎐 *Fun* 🎐 ━━━〢
@@ -7105,57 +7489,57 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
 ┃
 ┃ ⌯     ${prefix}reaction
 ┃ ⌯     ${prefix}cutecheck
-┃  ⌯     ${prefix}couple
+┃ ⌯     ${prefix}couple
 ┃ ⌯     ${prefix}soulmate
-┃  ⌯     ${prefix}handsomecheck
+┃ ⌯     ${prefix}handsomecheck
 ┃ ⌯     ${prefix}beautifulcheck
-┃⌯     ${prefix}awesomecheck
+┃ ⌯     ${prefix}awesomecheck
 ┃ ⌯     ${prefix}greatcheck
-┃  ⌯     ${prefix}gaycheck
-┃  ⌯     ${prefix}uglycheck
-┃  ⌯     ${prefix}charactercheck
-┃⌯     ${prefix}lesbiancheck
+┃ ⌯     ${prefix}gaycheck
+┃ ⌯     ${prefix}uglycheck
+┃ ⌯     ${prefix}charactercheck
+┃ ⌯     ${prefix}lesbiancheck
 ┃ ⌯     ${prefix}hornychec
-┃⌯     ${prefix}prettycheck
+┃ ⌯     ${prefix}prettycheck
 ┃ ⌯     ${prefix}lovelycheck
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
 
 ┏ ┅ ━〔 🈴 *Weeb* 🈴 ━━━〢
 ┃
 ┃
-┃  ⌯     ${prefix}anime
+┃ ⌯     ${prefix}anime
 ┃ ⌯     ${prefix}animestory
-┃  ⌯     ${prefix}awoo
-┃  ⌯     ${prefix}manga
-┃⌯     ${prefix}animewall
+┃ ⌯     ${prefix}awoo
+┃ ⌯     ${prefix}manga
+┃ ⌯     ${prefix}animewall
 ┃ ⌯     ${prefix}animewallpaper2
-┃  ⌯     ${prefix}crosplay
+┃ ⌯     ${prefix}crosplay
 ┃ ⌯     ${prefix}animenom
-┃⌯     ${prefix}feed
+┃ ⌯     ${prefix}feed
 ┃ ⌯     ${prefix}foxgirl
 ┃ ⌯     ${prefix}waifu
 ┃ ⌯     ${prefix}waifu2
-┃  ⌯     ${prefix}waifu3
+┃ ⌯     ${prefix}waifu3
 ┃ ⌯     ${prefix}loli
 ┃ ⌯     ${prefix}coffee
 ┃ ⌯     ${prefix}tickle
-┃  ⌯     ${prefix}meow
+┃ ⌯     ${prefix}meow
 ┃ ⌯     ${prefix}neko
 ┃ ⌯     ${prefix}neko2
 ┃ ⌯     ${prefix}migumin
-┃  ⌯     ${prefix}wallpaper
-┃⌯     ${prefix}animequote
+┃ ⌯     ${prefix}wallpaper
+┃ ⌯     ${prefix}animequote
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
 
 ┏ ┅ ━〔♨️ *Informative* ♨️ ━━━〢
 ┃ 
 ┃
-┃  ⌯     ${prefix}quote
+┃ ⌯     ${prefix}quote
 ┃ ⌯     ${prefix}weather
-┃  ⌯     ${prefix}covid
+┃ ⌯     ${prefix}covid
 ┃ ⌯     ${prefix}earthquake
 ┃ ⌯     ${prefix}wiki
-┃  ⌯     ${prefix}stalknumber
+┃ ⌯     ${prefix}stalknumber
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
 
 ┏ ┅ ━〔🪁 *Essentials* 🪁 ━━━〢
@@ -7163,8 +7547,8 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
 ┃
 ┃ ⌯     ${prefix}qr
 ┃ ⌯     ${prefix}say
-┃  ⌯     ${prefix}fliptext
-┃  ⌯     ${prefix}toletter
+┃ ⌯     ${prefix}fliptext
+┃ ⌯     ${prefix}toletter
 ┃ ⌯     ${prefix}translate, 
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
  
@@ -7180,7 +7564,7 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
 
 ┏ ┅ ━〔 ⚠️ *THX TO..* ⚠️ ━━━〢
 ┃⌯ALLAH SWT
-┃⌯RLP27
+┃⌯NEWBIE STORE
 ┃⌯MY BROTHER :)
 ┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ`
         let buttonMessage = {
@@ -7194,46 +7578,438 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
       }
         break;
 
+      case 'bugmenu': case 'bug': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+        const helpmenu = `Hemlo *${pushname}* Dear...!! ${nowtime} ,
+  
+Halo , Kenalin Saya *${global.BotName}* Saya Adalah Bot Whatsapp Yang dibuat oleh *${global.author}* Gunakan Bug dengan bijak yak, :).
 
-      case '':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
 
-          reply(`Do you need any help ${pushname} ? Type *${prefix}help* to get my full command list.`)
+┏ ┅ ━━〔〄 Bot Info 〄 〕━ ┅ ━
+┃ ⌯    *Time* : ${kaitime}
+┃ ⌯    *Date* : ${kaidate}
+┃ ⌯    *Bot usr name :* ${pushname} 
+┃ ⌯    *My prefix is :*  ${prefix}
+┃ ⌯    *Owner name :* ${global.OwnerName} 
+┃ ⌯    *Bot runtime :* ${runtime(process.uptime())} 
+┃ ⌯    *Platform :* Linux
+┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
+
+┏ ┅ ━━〔〄 *MENU BUG* 〄 〕━ ┅ 
+┃
+┃   ⌯     ${prefix}!tselilped
+┃   ⌯     ${prefix}!tselruangguru
+┃   ⌯     ${prefix}!isatedu
+┃   ⌯     ${prefix}!isatgame
+┃   ⌯     ${prefix}!liveon
+┃   ⌯     ${prefix}!xlsosmed
+┃   ⌯     ${prefix}!xlflex
+┃   ⌯     ${prefix}!xlfb
+┃   ⌯     ${prefix}!xledu
+┃   ⌯     ${prefix}!xlcon
+┃   ⌯     ${prefix}!xlff
+┃   ⌯     ${prefix}!xlvision
+┃   ⌯     ${prefix}!xlvideo
+┃   ⌯     ${prefix}!axiscon
+┃   ⌯     ${prefix}!axisedu
+┃   ⌯     ${prefix}!axisgame
+┃   ⌯     ${prefix}!axissosmed
+┃   ⌯     ${prefix}!axissushiroll
+┃   ⌯     ${prefix}sshprem
+┃   ⌯     sshws
+┃   ⌯     ${prefix}donasi
+┃
+┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
+
+┏ ┅ ━〔 ⚠️ *THX TO..* ⚠️ ━━━〢
+┃⌯ALLAH SWT
+┃⌯NEWBIE STORE
+┃⌯MY BROTHER :)
+┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ`
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/Ne.jpg'), gifPlayback: false,
+          caption: helpmenu,
+
+          headerType: 4
+
         }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
 
+      case 'sshmenu': case 'ssh': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+        const helpmenu = `Hemlo *${pushname}* Dear...!! ${nowtime} ,
+  
+Halo , Kenalin Saya *${global.BotName}* Saya Adalah Bot Whatsapp Yang dibuat oleh *${global.author}* Gunakan Bug dengan bijak yak, :).
+
+
+┏ ┅ ━━〔〄 Bot Info 〄 〕━ ┅ ━
+┃ ⌯    *Time* : ${kaitime}
+┃ ⌯    *Date* : ${kaidate}
+┃ ⌯    *Bot usr name :* ${pushname} 
+┃ ⌯    *My prefix is :*  ${prefix}
+┃ ⌯    *Owner name :* ${global.OwnerName} 
+┃ ⌯    *Bot runtime :* ${runtime(process.uptime())} 
+┃ ⌯    *Platform :* Linux
+┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
+
+┏ ┅ ━━〔〄 *MENU SSH* 〄 〕━ ┅ 
+┃
+┃ ━━〔〄 *FASTSSH.COM* 〄 〕━ 
+┃
+┃   ⌯     sshws
+┃   ⌯     sshws1
+┃   ⌯     sshws2
+┃   ⌯     sshws3
+┃   ⌯     sshws4
+┃
+┃ ━━〔〄 *SSHOCEAN.COM* 〄 〕━ 
+┃
+┃   ⌯     sshoce
+┃   ⌯     sshoce1
+┃   ⌯     sshoce2
+┃   ⌯     sshoce3
+┃   ⌯     sshoce4
+┃   ⌯     sshoce5
+┃   ⌯     sshoce6
+┃   ⌯     sshoce7
+┃
+┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ
+
+┏ ┅ ━〔 ⚠️ *THX TO..* ⚠️ ━━━〢
+┃⌯ALLAH SWT
+┃⌯NEWBIE STORE
+┃⌯MY BROTHER :)
+┗ ┅ ━━━━━━━━━━━ ┅ ━★᭄ꦿ᭄ꦿ`
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/Ne.jpg'), gifPlayback: false,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
         break;
 
 
-      case '':
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+      case 'buy': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+        if (!args.join("")) return reply(`MOHON INPUT *PRODUK|CONFIG|NAMA|IP|HARGA|HARI*`)
+        const swn = args.join(" ")
+        const pcknm = swn.split("|")[0];
+        const conm = swn.split("|")[1];
+        const nm = swn.split("|")[2];
+        const ip = swn.split("|")[3];
+        const hrg = swn.split("|")[4];
+        const hr = swn.split("|")[5];
+        const tglxp = swn.split("|")[6];
+        const helpmenu = `*___________________________*
+*_PEMBELIAN BERHASIL_*
+*___________________________*
+-» PRODUK : ${pcknm}
+-» REGION : SG ( SINGAPURA 🇸🇬 )
+-» REQ CONFIG : ${conm}
+-» REQ NAMA : ${nm}
+-» DEVICE : ${ip} IP
+-» HARGA : ${hrg}
+-» AKTIF : ${hr} HARI
+-» TGL EXP : ${tglxp}
+*___________________________*
+*_NewbieStore_*`
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/Ne.jpg'), gifPlayback: false,
+          caption: helpmenu,
 
-          reply(`Do you need any help ${pushname} ? Type *${prefix}help* to get my full command list.`)
+          headerType: 4
+
         }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
 
+      case 'donasi': case 'dukung': case 'support': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+        const helpmenu = `*Donasi Lewat Dana dan Qris*
+        
+Dana : 087863446310 An Diah Fitri Liani
+
+*Terimakasih atas Donasi dan Dukungannya*`
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/pic10.jpg'), gifPlayback: false,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+
+      case 'sshprem': case 'order': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+        const helpmenu = `*SILAHKAN HUBUNGI OWNER UNTUK MINTA SSH TRIAL GRATIS / ORDER SSH PREMIUM*`
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/Ne.jpg'), gifPlayback: false,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+        A17.sendContact(m.chat, global.Owner, m)
+      }
         break;
 
 
+      case '!tselilped': case '!tselruangguru': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        if (!isCreator) return reply(mess.botowner)
+        A17.sendMessage(from, { react: { text: "🚀", key: m.key } })
+        const helpmenu = `*◇━━━ILPED/RGURU TSEL━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agsent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: edu.ruangguru.com[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\n104.26.6.171\n104.22.20.245\n104.18.24.139`
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
+          caption: helpmenu,
 
-      case '':
-        if (isCmd) {
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+
+
+      case '!liveon': {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
-          A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+          if (!isCreator) return reply(mess.botowner)
+          A17.sendMessage(from, { react: { text: "🚀", key: m.key } })
 
-          reply(`Do you need any help ${pushname} ? Type *${prefix}help* to get my full command list.`)
+          const helpmenu = `*◇━━━━LIVE ON OPOK━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: beacon.liveon.id[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy:\nbeacon.liveon.id\nnapi.zendesk.com\nsupport.liveon.id`
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
         }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+        
+
+      case '!isatgame': {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          if (!isCreator) return reply(mess.botowner)
+          A17.sendMessage(from, { react: { text: "🚀", key: m.key } })
+
+          const helpmenu = `*◇━━━━ISAT GAME FUN━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: creativeservices.netflix.com[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\n104.17.241.25\ncache.netflix.com\nnpca.netflix.com`
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+
+
+      case '!axissushiroll': {
+           if (isBan) return reply(mess.banned);
+           if (isBanChat) return reply(mess.bangc);
+           if (!isCreator) return reply(mess.botowner)
+           A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
+
+           const helpmenu = `*◇━━━━AXIS SUSHIROLL━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agsent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: sushiroll.co.id[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf][split]HTTP/ 1[crlf][crlf]\n\nProxy\nwww.sushiroll.co.id\nblog.sushiroll.co.id`
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+
+        break;
+
+      case '!xledu': case '!axisedu': {
+           if (isBan) return reply(mess.banned);
+           if (isBanChat) return reply(mess.bangc);
+           if (!isCreator) return reply(mess.botowner)
+           A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
+
+           const helpmenu = `*◇━━━━XL/AXIS EDU━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agsent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: edu.ruangguru.com[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf][split]HTTP/ 1[crlf][crlf]\n\nProxy\n104.18.107.64\n104.17.70.206\n104.17.3.81`
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+
+        break;
+        
+
+      case '!isatedu': {
+           if (isBan) return reply(mess.banned);
+           if (isBanChat) return reply(mess.bangc);
+           if (!isCreator) return reply(mess.botowner)
+           A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
+
+           const helpmenu = `*◇━━━━ISAT EDU━━━━◇*\nPayload 1\nPATCH/ HTTP/1.1[crlf]Host: beta.zoom.us[crlf]GET / HTTP/1.1[crlf]Host: [Host][crlf]Upgrade: websocket [crlf][crlf]\n\nPlayload2\nGET /cdn-cgi/trace HTTP/1.1[crlf]Host: beta.zoom.us[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\npartner.zoom.us\nzoomcares.zoom.us\n141.193.213.11\nmarketplacefront-cf.zoom.us`
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+
+        break;
+        
+        
+      case '!xlflex': {
+           if (isBan) return reply(mess.banned);
+           if (isBanChat) return reply(mess.bangc);
+           if (!isCreator) return reply(mess.botowner)
+           A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
+
+           const helpmenu = `*◇━━━━XL/ FLEX━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agsent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nPATCH /ssh-ws HTTP/1.1[crlf]Host: [host][crlf]Host: tr.line.me[crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf][crlf]\n\nProxy\nsogood.linefriends.com\ndf.game.naver.com\n172.67.26.118`
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+
+        break;
+        
+        
+      case '!xlsosmed': case '!xlfb': case '!axissosmed': {
+           if (isBan) return reply(mess.banned);
+           if (isBanChat) return reply(mess.bangc);
+           if (!isCreator) return reply(mess.botowner)
+           A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
+
+           const helpmenu = `*◇━━━━XL /AXIS SOSMED━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: www.help.tinder.com[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\nwww.help.tinder.com\ninvestor.fb.com\n\n*SNI METOD*\ngraph.instagram.com`
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+
+        break;
+        
+
+      case '!xlvision': case '!xlvis':  {
+           if (isBan) return reply(mess.banned);
+           if (isBanChat) return reply(mess.bangc);
+           if (!isCreator) return reply(mess.botowner)
+           A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
+
+           const helpmenu = `*◇━━━━XL VISION +━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agsent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: partners-mplay.visionplus.id[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf][split]HTTP/ 1[crlf][crlf]\n\nProxy\n104.18.225.52\nakademiaforex.onesignal.com\napi.visionplus.id`
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+
+        break;
+        
+        
+      case '!xlvidio': case '!axisvidio': {
+           if (isBan) return reply(mess.banned);
+           if (isBanChat) return reply(mess.bangc);
+           if (!isCreator) return reply(mess.botowner)
+           A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
+
+           const helpmenu = `*◇━━━━XL /AXIS VIDIO━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: vidio.com[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\n104.22.4.240\nquiz.int.vidio.com\nquiz.vidio.com`
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+
+        break;
+        
+        
+      case '!xlcon': case '!axiscon': {
+           if (isBan) return reply(mess.banned);
+           if (isBanChat) return reply(mess.bangc);
+           if (!isCreator) return reply(mess.botowner)
+           A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
+
+           const helpmenu = `*◇━━━━XL /AXIS CONFRENCE━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nPATCH /ssh-ws HTTP/1.1[crlf]Host: [host][crlf]Host: partner.zoom.us[crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf][crlf]\n\nProxy\n170.114.45.0\npartner.zoom.us\nzoomcares.zoom.us`
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+
+        break;
+        
+        
+      case '!xlff': case '!axisgame': {
+           if (isBan) return reply(mess.banned);
+           if (isBanChat) return reply(mess.bangc);
+           if (!isCreator) return reply(mess.botowner)
+           A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
+
+           const helpmenu = `*◇━━━━XL /AXIS GAME━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nPATCH / HTTP/1.1[crlf]Host: [host][crlf]Host: cdn.appsflyer.com[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\ncdn.appsflyer.com\n104.16.108.96`
+        let buttonMessage = {
+          video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
 
         break;
 
 
       //qr
-      case 'qr': case 'scanner': case 'qrcode':
+        case 'qr': case 'scanner': case 'qrcode':
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
@@ -7365,14 +8141,6 @@ Halo , Kenalin Saya "Emily" Saya Adalah Bot Whatsapp Yang dibuat oleh RLP27 Guna
           }
         }
 
-
-        if (budy.startsWith('$')) {
-          if (!isCreator) return reply(mess.botowner)
-          exec(budy.slice(2), (err, stdout) => {
-            if (err) return A17.sendMessage(from, { image: ErrorPic, caption: String(err) }, { quoted: m })
-            if (stdout) return replyH(stdout)
-          })
-        }
 
 
         if (isCmd && budy.toLowerCase() != undefined) {

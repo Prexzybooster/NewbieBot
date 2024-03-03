@@ -5,7 +5,7 @@ const chalk = require("chalk");
 //
 global.available = true;
 global.autoReadAll = false;
-global.antitags = true;
+global.antitags = false;
 
 
 //auto functioner
@@ -21,31 +21,31 @@ global.prefa = ["."];                                    //Default prefix here. 
 
 
 //
-global.Owner = ["62895372305081", "6287737226143", "6282326322300"];         //If you want singal number so global.Owner = ['916297175943'] Change into your number.
-global.OwnerNumber = ["62895372305081", "6287737226143", "6282326322300"];   //If you want singal number so global.Owner = ['916297175943'] Change into your number.
-global.ownertag = ["62895372305081", "6282326322300"];
-global.OwnerName = "RLP27";
-global.BotName = "EMILY";
-global.packname = "EMILY Bot";                             //Do not change.
-global.author = "By: RLP27";                               //Do not change.
-global.BotSourceCode = "https://github.com/Laksmana27/Emily"; //Do not change.
+global.Owner = ["6287715912587", "6282326322300"];         //If you want singal number so global.Owner = ['6287715912587'] Change into your number.
+global.OwnerNumber = ["6287715912587", "6282326322300", "6287737226143"];   //If you want singal number so global.Owner = ['6287715912587'] Change into your number.
+global.ownertag = ["6287715912587"];
+global.OwnerName = "Newbie Store";
+global.BotName = "ELMA";
+global.packname = "ELMA Bot";                             //Do not change.
+global.author = "NEWBIE";                               //Do not change.
+global.BotSourceCode = "https://github.com/diah082/botnewbie"; //Do not change.
 global.SupportGroupLink = "https://chat.whatsapp.com/GhRGdwfaMVDCoeAdzILfl";
-
-
+global.Mod = "NEWBIE";
+            
 //
 global.sessionName = "session";                          //Do not change.
 
 
 //
-global.openAiAPI = "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";
+global.openAiAPI = "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";
 
 
 //
-global.location = "Cirebon, Indonesia";
+global.location = "Purbalingga, Jawa Tengah";
 global.reactmoji = "❤️";
 global.themeemoji = "💖";
 global.vidmenu = { url: 'https://media.tenor.com/Jdu0Ov8X2sIAAAAC/A17-Bot.mp4' };
-global.websitex = "https://github.com/Laksmana27";
+global.websitex = "https://github.com/diah082";
 global.lolhuman = "KaysaS";
 
 
@@ -82,15 +82,15 @@ global.mess = {
   jobdone: 'OKE JADI...',
   useradmin: 'HM APAJAH KAMU ADMIN GRUP?',
   botadmin: 'JADIKAN SAYA ADMIN BANG :) .',
-  botowner: 'LU BUKAN OWNER HANYA RIZKY SENPAI YG BISA PAKE mwheehe',
+  botowner: 'SEPERTINYA ANDA BUKAN OWNER, SILAHKAN HUBUNGI OWNER',
   grouponly: 'hanya bisa dipakai di dalam grup brother',
   privateonly: 'CHAT SAYA SECARA PRIVATE UNTUK MEMAKAI FITUR INI',
   botonly: 'INI FITUR HANYA SAYA SENDIRI YANG BISA PAKAI HEHE',
   waiting: 'MENUNGGU PAHALA...',
   nolink: 'Tidak boleh mengirim link ya!!',
-  error: 'Maaf Emily bingung!',
+  error: 'Maaf Elma bingung!',
   banned: 'Kamu kena banned!',
-  bangc: 'Grup ini kena banned,saya tidak bisa di gunakan dibgrup ini!',
+  bangc: 'Grup ini kena banned,saya tidak bisa di gunakan digrup ini!',
   nonsfw: 'INI FITUR MAU SAYA HAPUS :)'
 
 }
