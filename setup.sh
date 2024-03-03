@@ -75,9 +75,9 @@ echo -e "\e[32mloading...\e[0m"
 clear  
 # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To NewbieBot ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e " Welcome To NewbieBot ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup Bot WhatsApp On Your Server"
-echo -e "  Author : ${green}Kurniawan Setiadi © ${NC}${YELLOW}(${NC} ${green} Newbie Vpn ${NC}${YELLOW})${NC}"
+echo -e " Author : ${green}Kurniawan Setiadi © ${NC}${YELLOW}(${NC} ${green} Newbie Vpn ${NC}${YELLOW})${NC}"
 echo -e " © Recode By Kurniawan ®${YELLOW}(${NC} 2024 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
@@ -88,7 +88,7 @@ echo ""
 clear
     ########
 echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e " \e[1;971m                  MEMASANG FILE YANG DIBUTUHKAN                \e[0m"
+echo -e " \e[1;971m               MEMASANG FILE YANG DIBUTUHKAN                \e[0m"
 echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 apt install git
 apt install ffmpeg -y
@@ -100,7 +100,7 @@ nvm install node # "node" is an alias for the latest version
 npm install pm2 -g
 clear
 echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e " \e[1;971m                     MEMASANG NEWBIEBOT WHATSAPP               \e[0m"
+echo -e " \e[1;971m                MEMASANG NEWBIEBOT WHATSAPP               \e[0m"
 echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 git clone https://github.com/diah082/NewbieBot
 cd NewbieBot
