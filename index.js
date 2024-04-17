@@ -51,7 +51,7 @@ const store = makeInMemoryStore({
 async function startA17() {
   console.log(
     color(
-      figlet.textSync("Laksmana27 bit whatsapp", {
+      figlet.textSync("NEWBIEBOT bit whatsapp", {
         font: "Standard",
         horizontalLayout: "default",
         vertivalLayout: "default",
@@ -62,14 +62,14 @@ async function startA17() {
       "green"
     )
   );
-  console.log(color('\nHello, I am RLP27, the main Developer of this bot.\n\nThanks for using: Emily.', 'aqua'))
-  console.log(color('\nYou can follow me on GitHub: Laksmana27', 'aqua'))
+  console.log(color('\nHello, I am Newbie, the main Developer of this bot.\n\nThanks for using: NEWBIEBOT.', 'aqua'))
+  console.log(color('\nYou can follow me on GitHub: diah082', 'aqua'))
 
   const { state, saveCreds } = await useMultiFileAuthState("./A17-SESSION");
   const A17 = A17Connect({
     logger: pino({ level: "silent" }),
     printQRInTerminal: true,
-    browser: ["Emily Bot", "Safari", "3.O"],
+    browser: ["NewbieBot", "Safari", "3.O"],
     auth: state,
   });
 
@@ -77,20 +77,6 @@ async function startA17() {
 
 
  //
-  A17.ws.on('CB:call', async (json) => {
-    const callerId = json.content[0].attrs['call-creator']
-    if (json.content[0].tag === 'offer') {
-      try {
-        let contactMessage = await A17.sendContact(callerId, global.Owner)
-        await A17.sendMessage(callerId, { text: `Automatic Block System!\nDo not call this number!\nPlease unblock this number with permission from the Bot Owner.` }, { quoted: contactMessage })
-        await sleep(8000)
-        await A17.updateBlockStatus(callerId, "block")
-      } catch (error) {
-        console.error(error)
-      }
-    }
-  })
-
 
   A17.ev.on("messages.upsert", async (chatUpdate) => {
     try {
@@ -130,35 +116,6 @@ async function startA17() {
       }
      })
  */
-
-  A17.ev.on('groups.update', async pea => {
-    //console.log(pea)
-    // Get Profile Picture Group
-    try {
-      ppgc = await A17.profilePictureUrl(pea[0].id, 'image')
-    } catch {
-      ppgc = 'https://images2.alphacoders.com/882/882819.jpg'
-    }
-    let wm_fatih = { url: ppgc }
-    if (pea[0].announce == true) {
-      //A17.send5ButImg(pea[0].id, `Grop has been *Closed!* Only *Admins* can send Messages!`, `A17 Bot`, wm_fatih, [])
-
-      A17.sendMessage(m.chat, { image: wm_fatih, caption: 'Grop has been *Closed!* Only *Admins* can send Messages!' })
-    } else if (pea[0].announce == false) {
-      // A17.send5ButImg(pea[0].id, `Grop has been *Opened!* Now *Everyone* can send Messages!`, `A17 Bot`, wm_fatih, [])
-      A17.sendMessage(m.chat, { image: wm_fatih, caption: 'Grop has been *Opened!* Now *Everyone* can send Messages!' })
-    } else if (pea[0].restrict == true) {
-      //A17.send5ButImg(pea[0].id, `Group Info modification has been *Restricted*, Now only *Admins* can edit Group Info !`, `A17 Bot`, wm_fatih, [])
-      A17.sendMessage(m.chat, { image: wm_fatih, caption: 'Group Info modification has been *Restricted*, Now only *Admins* can edit Group Info !' })
-    } else if (pea[0].restrict == false) {
-      //A17.send5ButImg(pea[0].id, `Group Info modification has been *Un-Restricted*, Now only *Everyone* can edit Group Info !`, `A17 Bot`, wm_fatih, [])
-      A17.sendMessage(m.chat, { image: wm_fatih, caption: 'Group Info modification has been *Un-Restricted*, Now only *Everyone* can edit Group Info !' })
-    } else {
-      //A17.send5ButImg(pea[0].id, `Group Subject has been uhanged To:\n\n*${pea[0].subject}*`, `A17 Bot`, wm_fatih, [])
-      A17textddfq = `Group Subject has been updated To:\n\n*${pea[0].subject}*`
-      A17.sendMessage(pea[0].id, { image: wm_fatih, caption: A17textddfq })
-    }
-  })
 
 
 
@@ -275,7 +232,7 @@ async function startA17() {
             A17text = `
 Hallo @${WAuserName.split("@")[0]},
 
-Saya Adalah*Emily Bot*, Welcome to ${metadata.subject}.
+Saya Adalah *NewbieBot*, Welcome to ${metadata.subject}.
 
 *Group Description:*
 ${metadata.desc}

@@ -17,7 +17,7 @@ global.autoreadgc = true;
 
 
 //
-global.prefa = ["."];                                    //Default prefix here. you can change if you want.
+global.prefa = [","];                                    //Default prefix here. you can change if you want.
 
 
 //
@@ -28,7 +28,7 @@ global.OwnerName = "Newbie Store";
 global.BotName = "ELMA";
 global.packname = "ELMA Bot";                             //Do not change.
 global.author = "NEWBIE";                               //Do not change.
-global.BotSourceCode = "https://github.com/diah082/botnewbie"; //Do not change.
+global.BotSourceCode = "https://github.com/Laksmana27/Emily"; //Do not change.
 global.SupportGroupLink = "https://chat.whatsapp.com/GhRGdwfaMVDCoeAdzILfl";
 global.Mod = "NEWBIE";
             
@@ -37,7 +37,7 @@ global.sessionName = "session";                          //Do not change.
 
 
 //
-global.openAiAPI = "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";
+global.openAiAPI = "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";
 
 
 //
@@ -45,7 +45,7 @@ global.location = "Purbalingga, Jawa Tengah";
 global.reactmoji = "❤️";
 global.themeemoji = "💖";
 global.vidmenu = { url: 'https://media.tenor.com/Jdu0Ov8X2sIAAAAC/A17-Bot.mp4' };
-global.websitex = "https://github.com/diah082";
+global.websitex = "https://github.com/Laksmana27";
 global.lolhuman = "KaysaS";
 
 
@@ -54,6 +54,7 @@ global.BotLogo = fs.readFileSync("./Assets/pic1.jpg");
 global.Thumb = fs.readFileSync("./Assets/pic9.jpg");
 global.Thumb1 = fs.readFileSync("./Assets/pic5.jpg");
 global.ErrorPic = fs.readFileSync("./Assets/pic7.jpg");
+global.confi = fs.readFileSync("./Assets/CONFIG.zip")
 
 
 //

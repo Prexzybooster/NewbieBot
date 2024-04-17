@@ -751,11 +751,48 @@ Typed *surrender* to surrender and admited defeat`
 
     const responses = {
 
-
+      'order bg': `*___________________________*
+*_MOHON INFOKAN_*
+*___________________________*
+-» CONFIG : 
+-» NAMA : 
+-» HARGA : 
+-» TKP/TMPT TINGGAL:
+*___________________________*
+*_NewbieStore_*`,
+      'order kak': `*___________________________*
+*_MOHON INFOKAN_*
+*___________________________*
+-» CONFIG : 
+-» NAMA : 
+-» HARGA : 
+-» TKP/TMPT TINGGAL:
+*___________________________*
+*_NewbieStore_*`,
+      order: `*___________________________*
+*_MOHON INFOKAN_*
+*___________________________*
+-» CONFIG : 
+-» NAMA : 
+-» HARGA : 
+-» TKP/TMPT TINGGAL:
+*___________________________*
+*_NewbieStore_*`,
+      'newbie thr': `Horee, Selamat kak *_${pushname}_* Anda Berhak Mendapatkan Promo THR dari *Newbie*
+*___________________________*
+*_MOHON INFOKAN_*
+*___________________________*
+-» CONFIG : 
+-» NAMA : 
+-» TKP/TMPT TINGGAL : 
+-» HARGA : 10,000
+-» Limit Ip : 4 Hp / Free Hostpot
+*___________________________*
+*_Newbie Store VPN_*`,
       gcvip: `https://chat.whatsapp.com/FvCqYRo6tho8j5R8ib0R7f\n\nSilahkan Join Grup Member Vip Kak`,
       playloaden: `GET / HTTP/1.1[crlf]Host: [host][crlf]PATCH / HTTP/1.1[crlf]Host: Bug.com[crlf]Upgrade: websocket [crlf] User-Agent: [ua][crlf][crlf]Content-Length: CONFIG BY. NEWBIE[crlf][crlf][split]200 OK [crlf]`,
       playloadws: `GET / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf]User-Agent: [ua][crlf][crlf][split]CONFIG BY. NEWBIE[crlf][crlf]`,
-      config: `Link Config Newbie : https://sfile.mobi/user.php?files&user=681091\n\nLink *ALL CONFIG VIP NEWBIE*, ${kaidate} : https://sfile.mobi/7309A1NFeM8\n\nLink Grup NEWBIE : https://chat.whatsapp.com/Dg92Vc51FhlDE8nVfkLZJB\n\nhttps://chat.whatsapp.com/Cf46CisYPMF45EJQodH5Ur`,
+      config: `Link Config Newbie : https://sfile.mobi/user.php?files&user=681091\n\nLink *ALL CONFIG VIP NEWBIE*, ${kaidate} : https://sfile.mobi/7309A1NFeM8\n\nLink Grup NEWBIE : https://chat.whatsapp.com/Dg92Vc51FhlDE8nVfkLZJB\n\nhttps://chat.whatsapp.com/JXwpzhtk6z3FitDVRHZfWq`,
       runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
       konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
       sasha: 'Only you...🫶🏻',
@@ -775,83 +812,45 @@ Typed *surrender* to surrender and admited defeat`
     }
 
     const respon = {
-      harga: `Hay *${pushname}*, Aku *${BotName}*. Ini List Harga Newbie!
-
-*NEWBIE STORE VPN PREMIUM*
-Protocol:
-*_✅ SSH ✅ VMESS_*
-*_✅ VLESS ✅ TROJAN_*
-*___________________*
-*List Harga*
-*___________________*
+      ssh: `*NEWBIE STORE VPN PREMIUM*
 *_SERVER SGDO_* 🇸🇬
-*___________________*
-😀 *_5K | 15 Hari | 1HP |_*
-*_BERGARANSI_*
-😋  *_8K | 30 Hari | 1HP |_*
-*_BERGARANSI_*
+◇━━━━━━━━━━━━━━━◇
+*List Harga*
+◇━━━━━━━━━━━━━━━◇
+*_PREMIUM_*
+◇━━━━━━━━━━━━━━━◇
+😀 *_5K  | 15 Hari | 1HP |_*
+😋 *_8K  | 30 Hari | 1HP |_*
 🤩 *_10K | 30 Hari | 2HP |_*
-*_BERGARANSI_*
 🔥 *_15K | 30 Hari | 4HP |_*
-*_BERGARANSI_*
-*___________________*
-*_SERVER INDO_* 🇲🇨
-*___________________*
-😀 *_8K | 15 Hari | 1HP |_*
-*_BERGARANSI_*
-😋  *_12K | 30 Hari | 1HP |_*
-*_BERGARANSI_*
-🤩 *_15K | 30 Hari | 2HP |_*
-*_BERGARANSI_*
-🔥 *_20K | 30 Hari | 4HP |_*
-*_BERGARANSI_*
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 *Membeli artinya Setuju 👍 Jadilah Pembeli Yang Bijak* 🙂
-*Ready App lain*
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 *Pembayaran*
 DANA
 QRIS ALLPAYMENT
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 Ketik :
 *pay* untuk infomasi Pembayaran
-*___________________*`,
+◇━━━━━━━━━━━━━━━◇`,
     p: `*NEWBIE STORE VPN PREMIUM*
-Protocol:
-*_✅ SSH ✅ VMESS_*
-*_✅ VLESS ✅ TROJAN_*
-*___________________*
-*List Harga*
-*___________________*
 *_SERVER SGDO_* 🇸🇬
-*___________________*
-😀 *_5K | 15 Hari | 1HP |_*
-*_BERGARANSI_*
-😋  *_8K | 30 Hari | 1HP |_*
-*_BERGARANSI_*
+◇━━━━━━━━━━━━━━━◇
+*List Harga*
+◇━━━━━━━━━━━━━━━◇
+*_PREMIUM_*
+◇━━━━━━━━━━━━━━━◇
+😀 *_5K  | 15 Hari | 1HP |_*
+😋 *_8K  | 30 Hari | 1HP |_*
 🤩 *_10K | 30 Hari | 2HP |_*
-*_BERGARANSI_*
 🔥 *_15K | 30 Hari | 4HP |_*
-*_BERGARANSI_*
-*___________________*
-*_SERVER INDO_* 🇲🇨
-*___________________*
-😀 *_8K | 15 Hari | 1HP |_*
-*_BERGARANSI_*
-😋  *_12K | 30 Hari | 1HP |_*
-*_BERGARANSI_*
-🤩 *_15K | 30 Hari | 2HP |_*
-*_BERGARANSI_*
-🔥 *_20K | 30 Hari | 4HP |_*
-*_BERGARANSI_*
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 *Membeli artinya Setuju 👍 Jadilah Pembeli Yang Bijak* 🙂
-*Ready App lain*
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 *Pembayaran*
 DANA
 QRIS ALLPAYMENT
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 BENEFIT:
 💎 KUALITAS TERJAMIN
 💎 FREE CONFIG
@@ -862,7 +861,7 @@ BENEFIT:
 💎 SUPPORT VC, CALL
 💎 GAME (SILAHKAN DICOBA LANGSUNG)
 💎 DIJAMIN AMANAH
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 *RULES*
 ⛔ No Judi Online
 ⛔ No Trade
@@ -872,55 +871,41 @@ BENEFIT:
 ⛔ Multi Login Sesuai Akun!!
 
 *_Melanggar = Baned_*
-*__________________*
-🛒 Katalog : https://wa.me/c/6287715912587
-📱 Saluran : https://whatsapp.com/channel/0029VaOo8hjE50UmSF1kp31W
-📚Grup Newbie : 
-https://chat.whatsapp.com/Dg92Vc51FhlDE8nVfkLZJB
-📚Grup Newbie2 :
-https://chat.whatsapp.com/Cf46CisYPMF45EJQodH5Ur
+◇━━━━━━━━━━━━━━━◇
+*NEWBIE STORE JUGA SEDIA*
+◇━━━━━━━━━━━━━━━◇
+*_OPEN SOURCE SCRIPT_*
+*_SEWA SCRIPT LIFETIME_*
+*_OPEN JASA RECODE_*
+◇━━━━━━━━━━━━━━━◇
+📚Grup Newbie :
+https://chat.whatsapp.com/JXwpzhtk6z3FitDVRHZfWq
 📂Testi : https://t.me/TESTI_NEWBIE
 🔖Grup Tele : https://t.me/newbielearning
 Minat Hub :
 ➠ ADMIN 1
-Https://wa.me/6287715912587
-*___________________*`,
+Https://wa.me/6282326322300 
+➠ *_ADMIN TELE_*
+Https://t.me/newbie_store24 
+◇━━━━━━━━━━━━━━━◇`,
       promosi: `*NEWBIE STORE VPN PREMIUM*
-Protocol:
-*_✅ SSH ✅ VMESS_*
-*_✅ VLESS ✅ TROJAN_*
-*___________________*
-*List Harga*
-*___________________*
 *_SERVER SGDO_* 🇸🇬
-*___________________*
-😀 *_5K | 15 Hari | 1HP |_*
-*_BERGARANSI_*
-😋  *_8K | 30 Hari | 1HP |_*
-*_BERGARANSI_*
+◇━━━━━━━━━━━━━━━◇
+*List Harga*
+◇━━━━━━━━━━━━━━━◇
+*_PREMIUM_*
+◇━━━━━━━━━━━━━━━◇
+😀 *_5K  | 15 Hari | 1HP |_*
+😋 *_8K  | 30 Hari | 1HP |_*
 🤩 *_10K | 30 Hari | 2HP |_*
-*_BERGARANSI_*
 🔥 *_15K | 30 Hari | 4HP |_*
-*_BERGARANSI_*
-*___________________*
-*_SERVER INDO_* 🇲🇨
-*___________________*
-😀 *_8K | 15 Hari | 1HP |_*
-*_BERGARANSI_*
-😋  *_12K | 30 Hari | 1HP |_*
-*_BERGARANSI_*
-🤩 *_15K | 30 Hari | 2HP |_*
-*_BERGARANSI_*
-🔥 *_20K | 30 Hari | 4HP |_*
-*_BERGARANSI_*
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 *Membeli artinya Setuju 👍 Jadilah Pembeli Yang Bijak* 🙂
-*Ready App lain*
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 *Pembayaran*
 DANA
 QRIS ALLPAYMENT
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 BENEFIT:
 💎 KUALITAS TERJAMIN
 💎 FREE CONFIG
@@ -931,7 +916,7 @@ BENEFIT:
 💎 SUPPORT VC, CALL
 💎 GAME (SILAHKAN DICOBA LANGSUNG)
 💎 DIJAMIN AMANAH
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 *RULES*
 ⛔ No Judi Online
 ⛔ No Trade
@@ -941,55 +926,41 @@ BENEFIT:
 ⛔ Multi Login Sesuai Akun!!
 
 *_Melanggar = Baned_*
-*__________________*
-🛒 Katalog : https://wa.me/c/6287715912587
-📱 Saluran : https://whatsapp.com/channel/0029VaOo8hjE50UmSF1kp31W
-📚Grup Newbie : 
-https://chat.whatsapp.com/Dg92Vc51FhlDE8nVfkLZJB
-📚Grup Newbie2 :
-https://chat.whatsapp.com/Cf46CisYPMF45EJQodH5Ur
+◇━━━━━━━━━━━━━━━◇
+*NEWBIE STORE JUGA SEDIA*
+◇━━━━━━━━━━━━━━━◇
+*_OPEN SOURCE SCRIPT_*
+*_SEWA SCRIPT LIFETIME_*
+*_OPEN JASA RECODE_*
+◇━━━━━━━━━━━━━━━◇
+📚Grup Newbie :
+https://chat.whatsapp.com/JXwpzhtk6z3FitDVRHZfWq
 📂Testi : https://t.me/TESTI_NEWBIE
 🔖Grup Tele : https://t.me/newbielearning
 Minat Hub :
 ➠ ADMIN 1
-Https://wa.me/6287715912587
-*___________________*`,
-    '.izinpromosimin': `*NEWBIE STORE VPN PREMIUM*
-Protocol:
-*_✅ SSH ✅ VMESS_*
-*_✅ VLESS ✅ TROJAN_*
-*___________________*
-*List Harga*
-*___________________*
+Https://wa.me/6282326322300 
+➠ *_ADMIN TELE_*
+Https://t.me/newbie_store24 
+◇━━━━━━━━━━━━━━━◇`,
+      newbie: `*NEWBIE STORE VPN PREMIUM*
 *_SERVER SGDO_* 🇸🇬
-*___________________*
-😀 *_5K | 15 Hari | 1HP |_*
-*_BERGARANSI_*
-😋  *_8K | 30 Hari | 1HP |_*
-*_BERGARANSI_*
+◇━━━━━━━━━━━━━━━◇
+*List Harga*
+◇━━━━━━━━━━━━━━━◇
+*_PREMIUM_*
+◇━━━━━━━━━━━━━━━◇
+😀 *_5K  | 15 Hari | 1HP |_*
+😋 *_8K  | 30 Hari | 1HP |_*
 🤩 *_10K | 30 Hari | 2HP |_*
-*_BERGARANSI_*
 🔥 *_15K | 30 Hari | 4HP |_*
-*_BERGARANSI_*
-*___________________*
-*_SERVER INDO_* 🇲🇨
-*___________________*
-😀 *_8K | 15 Hari | 1HP |_*
-*_BERGARANSI_*
-😋  *_12K | 30 Hari | 1HP |_*
-*_BERGARANSI_*
-🤩 *_15K | 30 Hari | 2HP |_*
-*_BERGARANSI_*
-🔥 *_20K | 30 Hari | 4HP |_*
-*_BERGARANSI_*
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 *Membeli artinya Setuju 👍 Jadilah Pembeli Yang Bijak* 🙂
-*Ready App lain*
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 *Pembayaran*
 DANA
 QRIS ALLPAYMENT
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 BENEFIT:
 💎 KUALITAS TERJAMIN
 💎 FREE CONFIG
@@ -1000,7 +971,7 @@ BENEFIT:
 💎 SUPPORT VC, CALL
 💎 GAME (SILAHKAN DICOBA LANGSUNG)
 💎 DIJAMIN AMANAH
-*___________________*
+◇━━━━━━━━━━━━━━━◇
 *RULES*
 ⛔ No Judi Online
 ⛔ No Trade
@@ -1010,19 +981,78 @@ BENEFIT:
 ⛔ Multi Login Sesuai Akun!!
 
 *_Melanggar = Baned_*
-*__________________*
-🛒 Katalog : https://wa.me/c/6287715912587
-📱 Saluran : https://whatsapp.com/channel/0029VaOo8hjE50UmSF1kp31W
-📚Grup Newbie : 
-https://chat.whatsapp.com/Dg92Vc51FhlDE8nVfkLZJB
-📚Grup Newbie2 :
-https://chat.whatsapp.com/Cf46CisYPMF45EJQodH5Ur
+◇━━━━━━━━━━━━━━━◇
+*NEWBIE STORE JUGA SEDIA*
+◇━━━━━━━━━━━━━━━◇
+*_OPEN SOURCE SCRIPT_*
+*_SEWA SCRIPT LIFETIME_*
+*_OPEN JASA RECODE_*
+◇━━━━━━━━━━━━━━━◇
+📚Grup Newbie :
+https://chat.whatsapp.com/JXwpzhtk6z3FitDVRHZfWq
 📂Testi : https://t.me/TESTI_NEWBIE
 🔖Grup Tele : https://t.me/newbielearning
 Minat Hub :
 ➠ ADMIN 1
-Https://wa.me/6287715912587
-*___________________*`,
+Https://wa.me/6282326322300 
+➠ *_ADMIN TELE_*
+Https://t.me/newbie_store24 
+◇━━━━━━━━━━━━━━━◇`,
+    'izin min': `*NEWBIE STORE VPN PREMIUM*
+*_SERVER SGDO_* 🇸🇬
+◇━━━━━━━━━━━━━━━◇
+*List Harga*
+◇━━━━━━━━━━━━━━━◇
+*_PREMIUM_*
+◇━━━━━━━━━━━━━━━◇
+😀 *_5K  | 15 Hari | 1HP |_*
+😋 *_8K  | 30 Hari | 1HP |_*
+🤩 *_10K | 30 Hari | 2HP |_*
+🔥 *_15K | 30 Hari | 4HP |_*
+◇━━━━━━━━━━━━━━━◇
+*Membeli artinya Setuju 👍 Jadilah Pembeli Yang Bijak* 🙂
+◇━━━━━━━━━━━━━━━◇
+*Pembayaran*
+DANA
+QRIS ALLPAYMENT
+◇━━━━━━━━━━━━━━━◇
+BENEFIT:
+💎 KUALITAS TERJAMIN
+💎 FREE CONFIG
+💎 BEBAS GONTA GANTI CONFIG REQUEST KE ADMIN 
+💎 WAJIB TRIAL 
+💎 GARANSI 
+💎 SUDAH BAYAR TDK PUAS BISA REFUNDS
+💎 SUPPORT VC, CALL
+💎 GAME (SILAHKAN DICOBA LANGSUNG)
+💎 DIJAMIN AMANAH
+◇━━━━━━━━━━━━━━━◇
+*RULES*
+⛔ No Judi Online
+⛔ No Trade
+⛔ No Torrent 
+⛔ No Hacking
+⛔ No DDOS
+⛔ Multi Login Sesuai Akun!!
+
+*_Melanggar = Baned_*
+◇━━━━━━━━━━━━━━━◇
+*NEWBIE STORE JUGA SEDIA*
+◇━━━━━━━━━━━━━━━◇
+*_OPEN SOURCE SCRIPT_*
+*_SEWA SCRIPT LIFETIME_*
+*_OPEN JASA RECODE_*
+◇━━━━━━━━━━━━━━━◇
+📚Grup Newbie2 :
+https://chat.whatsapp.com/JXwpzhtk6z3FitDVRHZfWq
+📂Testi : https://t.me/TESTI_NEWBIE
+🔖Grup Tele : https://t.me/newbielearning
+Minat Hub :
+➠ ADMIN 1
+Https://wa.me/6282326322300 
+➠ *_ADMIN TELE_*
+Https://t.me/newbie_store24  
+◇━━━━━━━━━━━━━━━◇`,
     };
 
     const iinnput = budy.toLowerCase();
@@ -1039,26 +1069,27 @@ Https://wa.me/6287715912587
       }
 
     const respons = {
-      vps: `━━━━━━━━━━━━━━━━
+      vps: `◇━━━━━━━━━━━━━━◇
        🌐 *_VPS BY_* 🌐
 🌐 *_NEWBIE STORE_* 🌐
-━━━━━━━━━━━━━━━━
+◇━━━━━━━━━━━━━━◇
 ✓ ISP DigitalOcean 🚀
 ✓ Install script by NEWBIE STORE
 ✓ Garansi Selama Masa Aktif❗❗❗
-━━━━━━━━━━━━━━━
+◇━━━━━━━━━━━━━━◇
 *_Operating System_*
 • Ubuntu
 • Debian
-━━━━━━━━━━━━━━━━
+◇━━━━━━━━━━━━━━◇
 - Spek dan Harga :
 ✓ 1GB RAM, 25GB SSD : 35 IDR
 ✓ 2GB RAM, 50GB SSD : 45 IDR
-✓ 4GB RAM, 80GB SSD : 75 IDR
-✓ 8GB RAM, 160GB SSD : 105 IDR
-━━━━━━━━━━━━━━━
+✓ 4GB RAM, 80GB SSD : 80 IDR
+✓ 8GB RAM, 160GB SSD : 120 IDR
+✓ 3 Unit Ram 8,160 SSD : 250 IDR
+◇━━━━━━━━━━━━━━◇
 ORDER ? :
-WHATSAPP : https://wa.me/6287715912587`,
+TELEGRAM : https://t.me/newbie_store24`,
     };
 
     const input = budy.toLowerCase();
@@ -1075,8 +1106,8 @@ WHATSAPP : https://wa.me/6287715912587`,
       }
 
     const responee = {
-      sshoce: `id2.wscom.pro:80@sshocean-newbie:store`,
-      sshoce1: `id3.wscom.pro:80@sshocean-newbie:store`,
+      sshoce: `id1.wscom.pro:80@sshocean-newbie:store`,
+      sshoce1: `id2.wscom.pro:80@sshocean-newbie:store`,
       sshoce2: `id4.wscom.pro:80@sshocean-newbie:store`,
       sshoce3: `sg1.wscom.pro:80@sshocean-newbie:store`,
       sshoce4: `sg2.wscom.pro:80@sshocean-newbie:store`,
@@ -1104,35 +1135,32 @@ WHATSAPP : https://wa.me/6287715912587`,
         A17.sendMessage(m.chat, buttonMessage, { quoted: m });
       }
 
-    const respone = {
-      promo: `━━━━━━━━━━━━━━━━
-       🌐 *_PROMO NEWBIE_* 🌐
-🌐 *_SERVER INDO 10K_* 🌐
-━━━━━━━━━━━━━━━━
-✓ ISP LINODE AKAMI 🚀
-✓ Bergaransi Dan Terpercaya NEWBIE STORE
-✓ Masa Aktif 2 Bulan❗❗❗
-*_✓ PROMO UNTUK 3 PEMBELI PERTAMA_* ❗❗❗
-━━━━━━━━━━━━━━━
-*_Rules_*
-• Tidak Multi Login
-━━━━━━━━━━━━━━━━
-*_KEUNTUNGAN_*
-✓ BERGARANSI SELAMA MASA AKTIF
-✓ BEBAS GANTI PAKET KUOTA / CONFIG
-✓ BISA BUKA ALL APP
-✓ KECEPATAN WUSS  🚀 🚀 🚀
-━━━━━━━━━━━━━━━
-ORDER ? :
-WHATSAPP : https://wa.me/6287715912587`,
+    const respoonee = {
+      'newbie store': `◇━━━━━━━━━━━━━━◇
+       🌐 *_NEWBIE STORE_* 🌐
+🌐 *_MENYEDIAKAN_* 🌐
+◇━━━━━━━━━━━━━━◇
+✓ SSH PREMIUM 🚀
+✓ VPS ISP DIGITALOCEAN LCC 🚀
+✓ JASA RECODE SCRIPT 
+✓ OPEN SOURCE SCRIPT TUNNELING
+✓ SEWA SOURCE SCRIPT TUNNELING
+✓ DOMAIN
+◇━━━━━━━━━━━━━━◇
+*_KONTAK ADMIN_*
+Whatsapp : wa.me/6282326322300
+Telegram : https://t.me/newbie_store24
+◇━━━━━━━━━━━━━━◇
+NEWBIE STORE
+*_AMAN DAN TERPERCAYA_* `,
     };
 
-    const inpute = budy.toLowerCase();
+    const inputol = budy.toLowerCase();
     
-    if (respone.hasOwnProperty(inpute)) {
+    if (respoonee.hasOwnProperty(inputol)) {
         let buttonMessage = {
           image: fs.readFileSync('./Assets/Promo.jpg'), gifPlayback: false,
-          caption: (respone[inpute]),
+          caption: (respoonee[inputol]),
 
           headerType: 4
 
@@ -1153,6 +1181,7 @@ Dana : 087863446310 An Diah Fitri Liani
 
 *Jangan Lupa Kirim Bukti TF Yah.*
 Terimakasih`,
+
     };
 
     const inputee = budy.toLowerCase();
@@ -1181,8 +1210,8 @@ Terimakasih`,
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "❤", key: m.key } })
 
-        let { data } = await axios.get('https://api.github.com/repos/Laksmana27/Emily');
-        teks = `*A17 Script*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/Laksmana27/Emily\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
+        let { data } = await axios.get('https://api.github.com/repos/diah082/newbiebot');
+        teks = `*AUTO SC NEWBIEBOT*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/diah082/newbiebot\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
         /*  let buttons = [
           {buttonId: `${prefix}owner`, buttonText: {displayText: '🍁 DEVELOPER 🍁'}, type: 1}
           ] */
@@ -1195,14 +1224,14 @@ Terimakasih`,
            headerType: 4, */
           contextInfo: {
             externalAdreply: {
-              title: "Powered by RLP27",
+              title: "Powered by Newbie",
               body: " ",
               thumbnail: fs.readFileSync("As  sets/pic2.jpg"),
               mediaType: 1,
               //mediaUrl: 'https://wallpapercave.com/wp/wp10524580.jpg',
               //sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
-              mediaUrl: 'github.com/Laksmana27/Emily',
-              sourceUrl: "github.com/Laksmana27/Emily"
+              mediaUrl: 'github.com/diah082/newbiebot',
+              sourceUrl: "github.com/diah082/newbiebot"
             }
           }
 
@@ -1286,7 +1315,7 @@ Terimakasih`,
         if (isBanChat) return reply(mess.bangc);
 
         A17.sendMessage(from, { react: { text: "💫", key: m.key } })
-        reply(`⚙ My Source Code is </> - https://github.com/Laksmana27/Emily`)
+        reply(`⚙ My Source Code is </> - https://github.com/diah082/newbiebot`)
       }
         break;
 
@@ -1296,7 +1325,7 @@ Terimakasih`,
         if (isBanChat) return reply(mess.bangc);
 
         A17.sendMessage(from, { react: { text: "💫", key: m.key } })
-        A17.sendContact(m.chat, global.Owner, m)
+        A17.sendContact(m.chat, global.ownertag, m)
       }
         break;
 
@@ -7716,8 +7745,8 @@ Halo , Kenalin Saya *${global.BotName}* Saya Adalah Bot Whatsapp Yang dibuat ole
 *___________________________*
 -» PRODUK : ${pcknm}
 -» REGION : SG ( SINGAPURA 🇸🇬 )
--» REQ CONFIG : ${conm}
--» REQ NAMA : ${nm}
+-» CONFIG : ${conm}
+-» NAMA : ${nm}
 -» DEVICE : ${ip} IP
 -» HARGA : ${hrg}
 -» AKTIF : ${hr} HARI
@@ -7754,6 +7783,138 @@ Dana : 087863446310 An Diah Fitri Liani
         A17.sendMessage(m.chat, buttonMessage, { quoted: m })
       }
         break;
+
+      case 'sshtrial': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        if (!isCreator) return reply(mess.botowner)
+        A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
+        const helpmenu = `sg.vpnnewbie.my.id:80@Trial:1`
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/Ne.jpg'), gifPlayback: false,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+
+      case 'sshsg': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
+        const helpmenu = `http://sg.vpnnewbie.my.id:81/ssh-${(q)}.txt
+        
+        *_SILAHKAN KLIK LINK UNTUK MELIHAT DETAIL AKUN SSH ${(q)}_*`
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/Ne.jpg'), gifPlayback: false,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+        
+
+      case 'cekssh': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
+        const helpmenu = `http://syarif.vpnnewbie.my.id:81/ssh-${(q)}.txt
+
+*_SILAHKAN KLIK LINK UNTUK MELIHAT DETAIL AKUN SSH ${(q)}_*`
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/syarif.jpg'), gifPlayback: false,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+
+      case 'cekvmes': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
+        const helpmenu = `http://syarif.vpnnewbie.my.id:81/vmess-${(q)}.txt
+
+*_SILAHKAN KLIK LINK UNTUK MELIHAT DETAIL AKUN VMESS ${(q)}_*`
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/syarif.jpg'), gifPlayback: false,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+
+
+
+      case 'sshsg1': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
+        const helpmenu = `http://sg1.vpnnewbie.my.id:81/ssh-${(q)}.txt
+        
+        *_SILAHKAN KLIK LINK UNTUK MELIHAT DETAIL AKUN SSH ${(q)}_*`
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/Ne.jpg'), gifPlayback: false,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+        
+        
+      case 'vmessg': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
+        const helpmenu = `http://sg.vpnnewbie.my.id:81/vmess-${(q)}.txt
+        
+        *_SILAHKAN KLIK LINK UNTUK MELIHAT DETAIL AKUN VMESS ${(q)}_*`
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/Ne.jpg'), gifPlayback: false,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+
+
+
+      case 'vmessg1': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
+        const helpmenu = `http://sg1.vpnnewbie.my.id:81/vmess-${(q)}.txt
+        
+        *_SILAHKAN KLIK LINK UNTUK MELIHAT DETAIL AKUN SSH ${(q)}_*`
+        let buttonMessage = {
+          image: fs.readFileSync('./Assets/Ne.jpg'), gifPlayback: false,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+
 
       case 'sshprem': case 'order': {
         if (isBan) return reply(mess.banned);
