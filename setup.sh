@@ -70,7 +70,6 @@ checking_sc() {
     exit
   fi
 }
-checking_sc
 echo -e "\e[32mloading...\e[0m"
 clear  
 # // Banner
