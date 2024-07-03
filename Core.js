@@ -789,10 +789,12 @@ Typed *surrender* to surrender and admited defeat`
 -» Limit Ip : 4 Hp / Free Hostpot
 *___________________________*
 *_Newbie Store VPN_*`,
-      gcvip: `https://chat.whatsapp.com/FvCqYRo6tho8j5R8ib0R7f\n\nSilahkan Join Grup Member Vip Kak`,
+      gcvip: `https://chat.whatsapp.com/GllWYIjeUHMKRpedQW78Qw\n\nSilahkan Join Grup Member Vip Kak`,
       playloaden: `GET / HTTP/1.1[crlf]Host: [host][crlf]PATCH / HTTP/1.1[crlf]Host: Bug.com[crlf]Upgrade: websocket [crlf] User-Agent: [ua][crlf][crlf]Content-Length: CONFIG BY. NEWBIE[crlf][crlf][split]200 OK [crlf]`,
       playloadws: `GET / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf]User-Agent: [ua][crlf][crlf][split]CONFIG BY. NEWBIE[crlf][crlf]`,
-      config: `Link Config Newbie : https://sfile.mobi/user.php?files&user=681091\n\nLink *ALL CONFIG VIP NEWBIE*, ${kaidate} : https://sfile.mobi/7309A1NFeM8\n\nLink Grup NEWBIE : https://chat.whatsapp.com/Dg92Vc51FhlDE8nVfkLZJB\n\nhttps://chat.whatsapp.com/JXwpzhtk6z3FitDVRHZfWq`,
+      config: `Link Config Newbie : https://sfile.mobi/user.php?files&user=681091\n\nLink *ALL CONFIG VIP NEWBIE*, ${kaidate} : https://sfile.mobi/7309A1NFeM8\n\nLink Grup NEWBIE : https://chat.whatsapp.com/Dg92Vc51FhlDE8nVfkLZJB\n\nhttps://chat.whatsapp.com/CwFzjaOve4T3bAuO2sT8WZ
+
+https://chat.whatsapp.com/Jo9QobvI8Ge2LdFVNL6Mlp`,
       runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
       konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
       sasha: 'Only you...🫶🏻',
@@ -879,7 +881,9 @@ BENEFIT:
 *_OPEN JASA RECODE_*
 ◇━━━━━━━━━━━━━━━◇
 📚Grup Newbie :
-https://chat.whatsapp.com/JXwpzhtk6z3FitDVRHZfWq
+https://chat.whatsapp.com/CwFzjaOve4T3bAuO2sT8WZ
+
+https://chat.whatsapp.com/Jo9QobvI8Ge2LdFVNL6Mlp
 📂Testi : https://t.me/TESTI_NEWBIE
 🔖Grup Tele : https://t.me/newbielearning
 Minat Hub :
@@ -934,7 +938,9 @@ BENEFIT:
 *_OPEN JASA RECODE_*
 ◇━━━━━━━━━━━━━━━◇
 📚Grup Newbie :
-https://chat.whatsapp.com/JXwpzhtk6z3FitDVRHZfWq
+https://chat.whatsapp.com/CwFzjaOve4T3bAuO2sT8WZ
+
+https://chat.whatsapp.com/Jo9QobvI8Ge2LdFVNL6Mlp
 📂Testi : https://t.me/TESTI_NEWBIE
 🔖Grup Tele : https://t.me/newbielearning
 Minat Hub :
@@ -989,7 +995,9 @@ BENEFIT:
 *_OPEN JASA RECODE_*
 ◇━━━━━━━━━━━━━━━◇
 📚Grup Newbie :
-https://chat.whatsapp.com/JXwpzhtk6z3FitDVRHZfWq
+https://chat.whatsapp.com/CwFzjaOve4T3bAuO2sT8WZ
+
+https://chat.whatsapp.com/Jo9QobvI8Ge2LdFVNL6Mlp
 📂Testi : https://t.me/TESTI_NEWBIE
 🔖Grup Tele : https://t.me/newbielearning
 Minat Hub :
@@ -1044,7 +1052,9 @@ BENEFIT:
 *_OPEN JASA RECODE_*
 ◇━━━━━━━━━━━━━━━◇
 📚Grup Newbie2 :
-https://chat.whatsapp.com/JXwpzhtk6z3FitDVRHZfWq
+https://chat.whatsapp.com/CwFzjaOve4T3bAuO2sT8WZ
+
+https://chat.whatsapp.com/Jo9QobvI8Ge2LdFVNL6Mlp
 📂Testi : https://t.me/TESTI_NEWBIE
 🔖Grup Tele : https://t.me/newbielearning
 Minat Hub :
@@ -7630,9 +7640,7 @@ Halo , Kenalin Saya *${global.BotName}* Saya Adalah Bot Whatsapp Yang dibuat ole
 ┃
 ┃   ⌯     ${prefix}!tselilped
 ┃   ⌯     ${prefix}!tselruangguru
-┃   ⌯     ${prefix}!isatedu
-┃   ⌯     ${prefix}!isatgame
-┃   ⌯     ${prefix}!liveon
+┃   ⌯     ${prefix}!isatfun
 ┃   ⌯     ${prefix}!xlsosmed
 ┃   ⌯     ${prefix}!xlflex
 ┃   ⌯     ${prefix}!xlfb
@@ -8015,7 +8023,7 @@ Dana : 087863446310 An Diah Fitri Liani
            if (!isCreator) return reply(mess.botowner)
            A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
 
-           const helpmenu = `*◇━━━━XL/AXIS EDU━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agsent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: edu.ruangguru.com[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf][split]HTTP/ 1[crlf][crlf]\n\nProxy\n104.18.107.64\n104.17.70.206\n104.17.3.81`
+           const helpmenu = `*◇━━━━XL/AXIS EDU━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agsent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: edu.ruangguru.com[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf][split]HTTP/ 1[crlf][crlf]\n\nProxy\n104.18.107.64\n104.17.70.206\n104.17.3.81\nchat.sociomile.com`
         let buttonMessage = {
           video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
           caption: helpmenu,
@@ -8029,13 +8037,13 @@ Dana : 087863446310 An Diah Fitri Liani
         break;
         
 
-      case '!isatedu': {
+      case '!isatfun': {
            if (isBan) return reply(mess.banned);
            if (isBanChat) return reply(mess.bangc);
            if (!isCreator) return reply(mess.botowner)
            A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
 
-           const helpmenu = `*◇━━━━ISAT EDU━━━━◇*\nPayload 1\nPATCH/ HTTP/1.1[crlf]Host: beta.zoom.us[crlf]GET / HTTP/1.1[crlf]Host: [Host][crlf]Upgrade: websocket [crlf][crlf]\n\nPlayload2\nGET /cdn-cgi/trace HTTP/1.1[crlf]Host: beta.zoom.us[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\npartner.zoom.us\nzoomcares.zoom.us\n141.193.213.11\nmarketplacefront-cf.zoom.us`
+           const helpmenu = `*◇━━━━ISAT FUN━━━━◇*\nPayload 1\nGET / HTTP/1.1[crlf]Host: [Host][crlf]Upgrade: websocket [crlf][crlf]\n\nPlayload2\nGET /cdn-cgi/trace HTTP/1.1[crlf]Host: creativeservices.netflix.com[crlf][crlf]CF-RAY / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\n104.17.241.25\ncreativeservices.netflix.com\n`
         let buttonMessage = {
           video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
           caption: helpmenu,
@@ -8135,7 +8143,7 @@ Dana : 087863446310 An Diah Fitri Liani
            if (!isCreator) return reply(mess.botowner)
            A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
 
-           const helpmenu = `*◇━━━━XL /AXIS CONFRENCE━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nPATCH /ssh-ws HTTP/1.1[crlf]Host: [host][crlf]Host: partner.zoom.us[crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf][crlf]\n\nProxy\n170.114.45.0\npartner.zoom.us\nzoomcares.zoom.us`
+           const helpmenu = `*◇━━━━XL /AXIS CONFRENCE━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nPATCH /ssh-ws HTTP/1.1[crlf]Host: [host][crlf]Host: partner.zoom.us[crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf][crlf]\n\nProxy\n170.114.45.0\ngomarketplacefront-cf.zoom.us\ngomarketplacecontent-cf.zoom.us`
         let buttonMessage = {
           video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
           caption: helpmenu,
