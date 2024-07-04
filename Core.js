@@ -814,7 +814,7 @@ https://chat.whatsapp.com/Jo9QobvI8Ge2LdFVNL6Mlp`,
     }
 
     const respon = {
-      ssh: `*NEWBIE STORE VPN PREMIUM*
+      harga: `*NEWBIE STORE VPN PREMIUM*
 *_SERVER SGDO_* 🇸🇬
 ◇━━━━━━━━━━━━━━━◇
 *List Harga*
@@ -834,63 +834,8 @@ QRIS ALLPAYMENT
 Ketik :
 *pay* untuk infomasi Pembayaran
 ◇━━━━━━━━━━━━━━━◇`,
-    p: `*NEWBIE STORE VPN PREMIUM*
-*_SERVER SGDO_* 🇸🇬
-◇━━━━━━━━━━━━━━━◇
-*List Harga*
-◇━━━━━━━━━━━━━━━◇
-*_PREMIUM_*
-◇━━━━━━━━━━━━━━━◇
-😀 *_5K  | 15 Hari | 1HP |_*
-🤩 *_10K | 30 Hari | 2HP |_*
-🔥 *_15K | 30 Hari | 4HP |_*
-◇━━━━━━━━━━━━━━━◇
-*Membeli artinya Setuju 👍 Jadilah Pembeli Yang Bijak* 🙂
-◇━━━━━━━━━━━━━━━◇
-*Pembayaran*
-DANA
-QRIS ALLPAYMENT
-◇━━━━━━━━━━━━━━━◇
-BENEFIT:
-💎 KUALITAS TERJAMIN
-💎 FREE CONFIG
-💎 BEBAS GONTA GANTI CONFIG REQUEST KE ADMIN 
-💎 WAJIB TRIAL 
-💎 GARANSI 
-💎 SUDAH BAYAR TDK PUAS BISA REFUNDS
-💎 SUPPORT VC, CALL
-💎 GAME (SILAHKAN DICOBA LANGSUNG)
-💎 DIJAMIN AMANAH
-◇━━━━━━━━━━━━━━━◇
-*RULES*
-⛔ No Judi Online
-⛔ No Trade
-⛔ No Torrent 
-⛔ No Hacking
-⛔ No DDOS
-⛔ Multi Login Sesuai Akun!!
-
-*_Melanggar = Baned_*
-◇━━━━━━━━━━━━━━━◇
-*NEWBIE STORE JUGA SEDIA*
-◇━━━━━━━━━━━━━━━◇
-*_OPEN SOURCE SCRIPT_*
-*_SEWA SCRIPT LIFETIME_*
-*_OPEN JASA RECODE_*
-◇━━━━━━━━━━━━━━━◇
-📚Grup Newbie :
-https://chat.whatsapp.com/CwFzjaOve4T3bAuO2sT8WZ
-
-https://chat.whatsapp.com/Jo9QobvI8Ge2LdFVNL6Mlp
-📂Testi : https://t.me/TESTI_NEWBIE
-🔖Grup Tele : https://t.me/newbielearning
-Minat Hub :
-➠ ADMIN 1
-Https://wa.me/6282326322300 
-➠ *_ADMIN TELE_*
-Https://t.me/newbie_store24 
-◇━━━━━━━━━━━━━━━◇`,
-      promosi: `*NEWBIE STORE VPN PREMIUM*
+    p: `PaPe PaPe, Salam bukankan Lebih baik Bos!`
+    promosi: `*NEWBIE STORE VPN PREMIUM*
 *_SERVER SGDO_* 🇸🇬
 ◇━━━━━━━━━━━━━━━◇
 *List Harga*
