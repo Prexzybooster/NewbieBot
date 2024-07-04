@@ -822,7 +822,6 @@ https://chat.whatsapp.com/Jo9QobvI8Ge2LdFVNL6Mlp`,
 *_PREMIUM_*
 ◇━━━━━━━━━━━━━━━◇
 😀 *_5K  | 15 Hari | 1HP |_*
-😋 *_8K  | 30 Hari | 1HP |_*
 🤩 *_10K | 30 Hari | 2HP |_*
 🔥 *_15K | 30 Hari | 4HP |_*
 ◇━━━━━━━━━━━━━━━◇
@@ -843,7 +842,6 @@ Ketik :
 *_PREMIUM_*
 ◇━━━━━━━━━━━━━━━◇
 😀 *_5K  | 15 Hari | 1HP |_*
-😋 *_8K  | 30 Hari | 1HP |_*
 🤩 *_10K | 30 Hari | 2HP |_*
 🔥 *_15K | 30 Hari | 4HP |_*
 ◇━━━━━━━━━━━━━━━◇
@@ -900,7 +898,6 @@ Https://t.me/newbie_store24
 *_PREMIUM_*
 ◇━━━━━━━━━━━━━━━◇
 😀 *_5K  | 15 Hari | 1HP |_*
-😋 *_8K  | 30 Hari | 1HP |_*
 🤩 *_10K | 30 Hari | 2HP |_*
 🔥 *_15K | 30 Hari | 4HP |_*
 ◇━━━━━━━━━━━━━━━◇
@@ -957,7 +954,6 @@ Https://t.me/newbie_store24
 *_PREMIUM_*
 ◇━━━━━━━━━━━━━━━◇
 😀 *_5K  | 15 Hari | 1HP |_*
-😋 *_8K  | 30 Hari | 1HP |_*
 🤩 *_10K | 30 Hari | 2HP |_*
 🔥 *_15K | 30 Hari | 4HP |_*
 ◇━━━━━━━━━━━━━━━◇
@@ -1014,7 +1010,6 @@ Https://t.me/newbie_store24
 *_PREMIUM_*
 ◇━━━━━━━━━━━━━━━◇
 😀 *_5K  | 15 Hari | 1HP |_*
-😋 *_8K  | 30 Hari | 1HP |_*
 🤩 *_10K | 30 Hari | 2HP |_*
 🔥 *_15K | 30 Hari | 4HP |_*
 ◇━━━━━━━━━━━━━━━◇
@@ -4259,7 +4254,7 @@ Terimakasih`,
         break;
 
 
-      case 'remove': {
+      case 'sepak': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
