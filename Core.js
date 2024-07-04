@@ -834,8 +834,8 @@ QRIS ALLPAYMENT
 Ketik :
 *pay* untuk infomasi Pembayaran
 ◇━━━━━━━━━━━━━━━◇`,
-    p: `PaPe PaPe, Salam bukankan Lebih baik Bos!`
-    promosi: `*NEWBIE STORE VPN PREMIUM*
+      p: `PaPe PaPe, Salam bukankan Lebih baik Bos!`,
+      promosi: `*NEWBIE STORE VPN PREMIUM*
 *_SERVER SGDO_* 🇸🇬
 ◇━━━━━━━━━━━━━━━◇
 *List Harga*
@@ -7581,6 +7581,7 @@ Halo , Kenalin Saya *${global.BotName}* Saya Adalah Bot Whatsapp Yang dibuat ole
 ┃   ⌯     ${prefix}!tselilped
 ┃   ⌯     ${prefix}!tselruangguru
 ┃   ⌯     ${prefix}!isatfun
+┃   ⌯     ${prefix}!byuggwp
 ┃   ⌯     ${prefix}!xlsosmed
 ┃   ⌯     ${prefix}!xlflex
 ┃   ⌯     ${prefix}!xlfb
@@ -7885,7 +7886,6 @@ Dana : 087863446310 An Diah Fitri Liani
       case '!tselilped': case '!tselruangguru': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        if (!isCreator) return reply(mess.botowner)
         A17.sendMessage(from, { react: { text: "🚀", key: m.key } })
         const helpmenu = `*◇━━━ILPED/RGURU TSEL━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agsent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: edu.ruangguru.com[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\n104.26.6.171\n104.22.20.245\n104.18.24.139`
         let buttonMessage = {
@@ -7903,7 +7903,6 @@ Dana : 087863446310 An Diah Fitri Liani
       case '!liveon': {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
-          if (!isCreator) return reply(mess.botowner)
           A17.sendMessage(from, { react: { text: "🚀", key: m.key } })
 
           const helpmenu = `*◇━━━━LIVE ON OPOK━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: beacon.liveon.id[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy:\nbeacon.liveon.id\nnapi.zendesk.com\nsupport.liveon.id`
@@ -7919,13 +7918,12 @@ Dana : 087863446310 An Diah Fitri Liani
         break;
         
 
-      case '!isatgame': {
+      case '!byuggwp': {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
-          if (!isCreator) return reply(mess.botowner)
           A17.sendMessage(from, { react: { text: "🚀", key: m.key } })
 
-          const helpmenu = `*◇━━━━ISAT GAME FUN━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: creativeservices.netflix.com[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\n104.17.241.25\ncache.netflix.com\nnpca.netflix.com`
+          const helpmenu = `*◇━━━━BYU GGWP━━━━◇*\nPayload  \nGET /cdn-cgi/trace HTTP/1.1[crlf]Host: 104.19.143.108[crlf][crlf]CF-RAY / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\n104.19.143.108`
         let buttonMessage = {
           video: fs.readFileSync('./Assets/T2.mp4'), gifPlayback: true,
           caption: helpmenu,
@@ -7941,7 +7939,6 @@ Dana : 087863446310 An Diah Fitri Liani
       case '!axissushiroll': {
            if (isBan) return reply(mess.banned);
            if (isBanChat) return reply(mess.bangc);
-           if (!isCreator) return reply(mess.botowner)
            A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
 
            const helpmenu = `*◇━━━━AXIS SUSHIROLL━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agsent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: sushiroll.co.id[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf][split]HTTP/ 1[crlf][crlf]\n\nProxy\nwww.sushiroll.co.id\nblog.sushiroll.co.id`
@@ -7960,7 +7957,6 @@ Dana : 087863446310 An Diah Fitri Liani
       case '!xledu': case '!axisedu': {
            if (isBan) return reply(mess.banned);
            if (isBanChat) return reply(mess.bangc);
-           if (!isCreator) return reply(mess.botowner)
            A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
 
            const helpmenu = `*◇━━━━XL/AXIS EDU━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agsent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: edu.ruangguru.com[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf][split]HTTP/ 1[crlf][crlf]\n\nProxy\n104.18.107.64\n104.17.70.206\n104.17.3.81\nchat.sociomile.com`
@@ -7980,7 +7976,6 @@ Dana : 087863446310 An Diah Fitri Liani
       case '!isatfun': {
            if (isBan) return reply(mess.banned);
            if (isBanChat) return reply(mess.bangc);
-           if (!isCreator) return reply(mess.botowner)
            A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
 
            const helpmenu = `*◇━━━━ISAT FUN━━━━◇*\nPayload 1\nGET / HTTP/1.1[crlf]Host: [Host][crlf]Upgrade: websocket [crlf][crlf]\n\nPlayload2\nGET /cdn-cgi/trace HTTP/1.1[crlf]Host: creativeservices.netflix.com[crlf][crlf]CF-RAY / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\n104.17.241.25\ncreativeservices.netflix.com\n`
@@ -8000,7 +7995,6 @@ Dana : 087863446310 An Diah Fitri Liani
       case '!xlflex': {
            if (isBan) return reply(mess.banned);
            if (isBanChat) return reply(mess.bangc);
-           if (!isCreator) return reply(mess.botowner)
            A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
 
            const helpmenu = `*◇━━━━XL/ FLEX━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agsent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nPATCH /ssh-ws HTTP/1.1[crlf]Host: [host][crlf]Host: tr.line.me[crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf][crlf]\n\nProxy\nsogood.linefriends.com\ndf.game.naver.com\n172.67.26.118`
@@ -8020,7 +8014,6 @@ Dana : 087863446310 An Diah Fitri Liani
       case '!xlsosmed': case '!xlfb': case '!axissosmed': {
            if (isBan) return reply(mess.banned);
            if (isBanChat) return reply(mess.bangc);
-           if (!isCreator) return reply(mess.botowner)
            A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
 
            const helpmenu = `*◇━━━━XL /AXIS SOSMED━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: www.help.tinder.com[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\nwww.help.tinder.com\ninvestor.fb.com\n\n*SNI METOD*\ngraph.instagram.com`
@@ -8040,7 +8033,6 @@ Dana : 087863446310 An Diah Fitri Liani
       case '!xlvision': case '!xlvis':  {
            if (isBan) return reply(mess.banned);
            if (isBanChat) return reply(mess.bangc);
-           if (!isCreator) return reply(mess.botowner)
            A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
 
            const helpmenu = `*◇━━━━XL VISION +━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agsent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: partners-mplay.visionplus.id[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf][split]HTTP/ 1[crlf][crlf]\n\nProxy\n104.18.225.52\nakademiaforex.onesignal.com\napi.visionplus.id`
@@ -8060,7 +8052,6 @@ Dana : 087863446310 An Diah Fitri Liani
       case '!xlvidio': case '!axisvidio': {
            if (isBan) return reply(mess.banned);
            if (isBanChat) return reply(mess.bangc);
-           if (!isCreator) return reply(mess.botowner)
            A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
 
            const helpmenu = `*◇━━━━XL /AXIS VIDIO━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nGET / HTTP/1.1[crlf]Host: vidio.com[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\n104.22.4.240\nquiz.int.vidio.com\nquiz.vidio.com`
@@ -8080,7 +8071,6 @@ Dana : 087863446310 An Diah Fitri Liani
       case '!xlcon': case '!axiscon': {
            if (isBan) return reply(mess.banned);
            if (isBanChat) return reply(mess.bangc);
-           if (!isCreator) return reply(mess.botowner)
            A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
 
            const helpmenu = `*◇━━━━XL /AXIS CONFRENCE━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nPATCH /ssh-ws HTTP/1.1[crlf]Host: [host][crlf]Host: partner.zoom.us[crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf][crlf]\n\nProxy\n170.114.45.0\ngomarketplacefront-cf.zoom.us\ngomarketplacecontent-cf.zoom.us`
@@ -8100,7 +8090,6 @@ Dana : 087863446310 An Diah Fitri Liani
       case '!xlff': case '!axisgame': {
            if (isBan) return reply(mess.banned);
            if (isBanChat) return reply(mess.bangc);
-           if (!isCreator) return reply(mess.botowner)
            A17.sendMessage(from, { react: {text: "🚀", key: m.key } })
 
            const helpmenu = `*◇━━━━XL /AXIS GAME━━━━◇*\nPayload Non Jabar\nGET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nPlayload Jabar\nPATCH / HTTP/1.1[crlf]Host: [host][crlf]Host: cdn.appsflyer.com[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]\n\nProxy\ncdn.appsflyer.com\n104.16.108.96`
